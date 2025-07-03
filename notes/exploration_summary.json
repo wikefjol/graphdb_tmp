@@ -1,0 +1,76 @@
+{
+  "exploration_date": "2025-06-25 15:03:12",
+  "total_indices": 14,
+  "indices_summary": {
+    "research-differences": {
+      "doc_count": 434,
+      "field_count": 0,
+      "size": "844.6kb"
+    },
+    "research-serials202506041150496604328": {
+      "doc_count": 40588,
+      "field_count": 0,
+      "size": "70.2mb"
+    },
+    "research-publications-events": {
+      "doc_count": 501522,
+      "field_count": 0,
+      "size": "352.5mb"
+    },
+    "research-organizations202506040919442022300": {
+      "doc_count": 18081,
+      "field_count": 0,
+      "size": "76.2mb"
+    },
+    "research-publications-static": {
+      "doc_count": 95697,
+      "field_count": 0,
+      "size": "7.8gb"
+    },
+    "research-persons-static": {
+      "doc_count": 195940,
+      "field_count": 0,
+      "size": "965mb"
+    },
+    "research-publications-cache": {
+      "doc_count": 179986,
+      "field_count": 0,
+      "size": "18.2gb"
+    },
+    "research-projects-static": {
+      "doc_count": 6782,
+      "field_count": 0,
+      "size": "603mb"
+    },
+    "research-serials-static": {
+      "doc_count": 40588,
+      "field_count": 0,
+      "size": "73.1mb"
+    },
+    "research-publications202506041154125819243": {
+      "doc_count": 95575,
+      "field_count": 0,
+      "size": "3.9gb"
+    },
+    "research-organizations-static": {
+      "doc_count": 18043,
+      "field_count": 0,
+      "size": "82.3mb"
+    },
+    "research-publications202506050807260297511": {
+      "doc_count": 95861,
+      "field_count": 0,
+      "size": "4.1gb"
+    },
+    "research-projects202506041105261197396": {
+      "doc_count": 6782,
+      "field_count": 0,
+      "size": "581.8mb"
+    },
+    "research-persons202506040921251965414": {
+      "doc_count": 196278,
+      "field_count": 0,
+      "size": "959.2mb"
+    }
+  }
+}

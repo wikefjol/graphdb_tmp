@@ -1,0 +1,251 @@
+{
+  "index_name": "research-differences",
+  "explored_at": "2025-06-25 15:03:10",
+  "document_count": 434,
+  "size_info": "844.6kb",
+  "field_names": [],
+  "mapping": {
+    "research-differences": {
+      "mappings": {
+        "difference": {
+          "properties": {
+            "created": {
+              "type": "long"
+            },
+            "description": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "id": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "prio": {
+              "type": "long"
+            },
+            "pub": {
+              "properties": {
+                "pubType": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "title": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "year": {
+                  "type": "long"
+                }
+              }
+            },
+            "source": {
+              "properties": {
+                "datestamp": {
+                  "type": "date"
+                },
+                "id": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "method": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "name": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "status": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "status": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "type": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "value": {
+              "properties": {
+                "Type": {
+                  "properties": {
+                    "Value": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "Value": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "sample_documents": [
+    {
+      "_index": "research-differences",
+      "_type": "difference",
+      "_id": "8iqmJbU93TziobXPmGFF2k9tFXk",
+      "_score": 1.0,
+      "_source": {
+        "id": "8iqmJbU93TziobXPmGFF2k9tFXk",
+        "created": 1750665041881,
+        "source": {
+          "name": "SWEPUB_GU",
+          "method": "normalizeSwepub",
+          "id": "oai:gup.ub.gu.se/251347",
+          "status": "unknown",
+          "datestamp": "2025-04-29T16:09:10Z"
+        },
+        "pub": {
+          "title": "The dbar-equation on a non-reduced analytic space",
+          "year": 2017,
+          "pubType": "Övrigt"
+        },
+        "connected": [],
+        "description": "Found no publications connected to the source data with identifier: GUP_ID:251347.",
+        "type": "NEW_ID",
+        "value": {
+          "Type": {
+            "Value": "GUP_ID"
+          },
+          "Value": "251347"
+        },
+        "prio": 2017
+      }
+    },
+    {
+      "_index": "research-differences",
+      "_type": "difference",
+      "_id": "0IV1A3GTZEXVDnBy4RHx_n9w-FQ",
+      "_score": 1.0,
+      "_source": {
+        "id": "0IV1A3GTZEXVDnBy4RHx_n9w-FQ",
+        "created": 1750665042332,
+        "source": {
+          "name": "SWEPUB_GU",
+          "method": "normalizeSwepub",
+          "id": "oai:gup.ub.gu.se/251592",
+          "status": "unknown",
+          "datestamp": "2025-04-29T16:09:22Z"
+        },
+        "pub": {
+          "title": "Relations between Schramm spaces and generalized Wiener classes",
+          "year": 2017,
+          "pubType": "Artikel i vetenskaplig tidskrift"
+        },
+        "connected": [],
+        "description": "Found no publications connected to the source data with identifier: GUP_ID:251592.",
+        "type": "NEW_ID",
+        "value": {
+          "Type": {
+            "Value": "GUP_ID"
+          },
+          "Value": "251592"
+        },
+        "prio": 12017
+      }
+    },
+    {
+      "_index": "research-differences",
+      "_type": "difference",
+      "_id": "lThvAFvAVHgQXhiZFHVtO36RMUs",
+      "_score": 1.0,
+      "_source": {
+        "id": "lThvAFvAVHgQXhiZFHVtO36RMUs",
+        "created": 1750665042332,
+        "source": {
+          "name": "SWEPUB_GU",
+          "method": "normalizeSwepub",
+          "id": "oai:gup.ub.gu.se/251592",
+          "status": "unknown",
+          "datestamp": "2025-04-29T16:09:22Z"
+        },
+        "pub": {
+          "title": "Relations between Schramm spaces and generalized Wiener classes",
+          "year": 2017,
+          "pubType": "Artikel i vetenskaplig tidskrift"
+        },
+        "connected": [],
+        "description": "Found no publications connected to the source data with identifier: SCOPUS_ID:85010875105.",
+        "type": "NEW_ID",
+        "value": {
+          "Type": {
+            "Value": "SCOPUS_ID"
+          },
+          "Value": "85010875105"
+        },
+        "prio": 12017
+      }
+    }
+  ]
+}

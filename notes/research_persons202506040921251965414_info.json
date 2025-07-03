@@ -1,0 +1,2706 @@
+{
+  "index_name": "research-persons202506040921251965414",
+  "explored_at": "2025-06-25 15:03:12",
+  "document_count": 196278,
+  "size_info": "959.2mb",
+  "field_names": [],
+  "mapping": {
+    "research-persons202506040921251965414": {
+      "mappings": {
+        "person": {
+          "properties": {
+            "BirthYear": {
+              "type": "integer"
+            },
+            "CreatedAt": {
+              "type": "date"
+            },
+            "CreatedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DeletedAt": {
+              "type": "date"
+            },
+            "DeletedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DisplayName": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "FirstName": {
+              "type": "text",
+              "analyzer": "person_name_autosuggest_analyzer",
+              "search_analyzer": "person_search_analyzer"
+            },
+            "HasIdentifiers": {
+              "type": "boolean"
+            },
+            "HasOrganizationHome": {
+              "type": "boolean"
+            },
+            "HasProjects": {
+              "type": "boolean"
+            },
+            "HasPublications": {
+              "type": "boolean"
+            },
+            "Id": {
+              "type": "keyword"
+            },
+            "IdentifierCid": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "IdentifierCplPersonId": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "IdentifierOrcid": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "Identifiers": {
+              "type": "nested",
+              "properties": {
+                "CreatedAt": {
+                  "type": "date"
+                },
+                "CreatedBy": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "Id": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "IsActive": {
+                  "type": "boolean"
+                },
+                "Type": {
+                  "properties": {
+                    "DescriptionEng": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DescriptionSwe": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Id": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Value": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "UpdatedAt": {
+                  "type": "date"
+                },
+                "UpdatedBy": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "Value": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "IdentifiersCount": {
+              "type": "integer"
+            },
+            "IsActive": {
+              "type": "boolean"
+            },
+            "IsDeleted": {
+              "type": "boolean"
+            },
+            "IsReplacedById": {
+              "type": "keyword"
+            },
+            "IsReplacingId": {
+              "type": "keyword"
+            },
+            "LastName": {
+              "type": "text",
+              "analyzer": "person_name_autosuggest_analyzer",
+              "search_analyzer": "person_search_analyzer"
+            },
+            "NeedsAttention": {
+              "type": "boolean"
+            },
+            "OrganizationHome": {
+              "properties": {
+                "EndDate": {
+                  "type": "date"
+                },
+                "Id": {
+                  "type": "keyword"
+                },
+                "LastUpdatedDate": {
+                  "type": "date"
+                },
+                "OrganizationData": {
+                  "properties": {
+                    "ActiveOrganizationParentIds": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "City": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Country": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "CreatedAt": {
+                      "type": "date"
+                    },
+                    "CreatedBy": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DeletedAt": {
+                      "type": "date"
+                    },
+                    "DeletedBy": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DisplayNameEng": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DisplayNameSwe": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DisplayPathEng": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DisplayPathShortEng": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DisplayPathShortSwe": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DisplayPathSwe": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "EndYear": {
+                      "type": "integer"
+                    },
+                    "GeoLat": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "GeoLong": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "HasIdentifiers": {
+                      "type": "boolean"
+                    },
+                    "Id": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "IdentifierCplDepartmentId": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "IdentifierLdapCode": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Identifiers": {
+                      "properties": {
+                        "CreatedAt": {
+                          "type": "date"
+                        },
+                        "CreatedBy": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "Id": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "IsActive": {
+                          "type": "boolean"
+                        },
+                        "Type": {
+                          "properties": {
+                            "DescriptionEng": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "DescriptionSwe": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "Id": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "Value": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "UpdatedAt": {
+                          "type": "date"
+                        },
+                        "UpdatedBy": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "Value": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "IdentifiersCount": {
+                      "type": "integer"
+                    },
+                    "IsActive": {
+                      "type": "boolean"
+                    },
+                    "IsReplacedById": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Level": {
+                      "type": "integer"
+                    },
+                    "NameEng": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "NameSwe": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "NeedsAttention": {
+                      "type": "boolean"
+                    },
+                    "OrganizationParents": {
+                      "properties": {
+                        "FromDate": {
+                          "type": "date"
+                        },
+                        "Id": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "ParentOrganizationData": {
+                          "properties": {
+                            "ActiveOrganizationParentIds": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "City": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "Country": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "CreatedAt": {
+                              "type": "date"
+                            },
+                            "CreatedBy": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "DisplayNameEng": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "DisplayNameSwe": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "EndYear": {
+                              "type": "long"
+                            },
+                            "GeoLat": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "GeoLong": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "HasIdentifiers": {
+                              "type": "boolean"
+                            },
+                            "Id": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "IdentifierCplDepartmentId": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "IdentifierLdapCode": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "Identifiers": {
+                              "properties": {
+                                "CreatedAt": {
+                                  "type": "date"
+                                },
+                                "CreatedBy": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "Id": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "IsActive": {
+                                  "type": "boolean"
+                                },
+                                "Type": {
+                                  "properties": {
+                                    "DescriptionEng": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "DescriptionSwe": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "Id": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "Value": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "IdentifiersCount": {
+                              "type": "long"
+                            },
+                            "IsActive": {
+                              "type": "boolean"
+                            },
+                            "Level": {
+                              "type": "long"
+                            },
+                            "NameEng": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "NameSwe": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "NeedsAttention": {
+                              "type": "boolean"
+                            },
+                            "OrganizationParents": {
+                              "properties": {
+                                "FromDate": {
+                                  "type": "date"
+                                },
+                                "Id": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "ParentOrganizationData": {
+                                  "properties": {
+                                    "ActiveOrganizationParentIds": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "City": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "Country": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "CreatedAt": {
+                                      "type": "date"
+                                    },
+                                    "CreatedBy": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "DisplayNameEng": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "DisplayNameSwe": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "EndYear": {
+                                      "type": "long"
+                                    },
+                                    "GeoLat": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "GeoLong": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "HasIdentifiers": {
+                                      "type": "boolean"
+                                    },
+                                    "Id": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "IdentifierCplDepartmentId": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "IdentifierLdapCode": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "Identifiers": {
+                                      "properties": {
+                                        "CreatedAt": {
+                                          "type": "date"
+                                        },
+                                        "CreatedBy": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "Id": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "IsActive": {
+                                          "type": "boolean"
+                                        },
+                                        "Type": {
+                                          "properties": {
+                                            "DescriptionEng": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "DescriptionSwe": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "Id": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "Value": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "Value": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "IdentifiersCount": {
+                                      "type": "long"
+                                    },
+                                    "IsActive": {
+                                      "type": "boolean"
+                                    },
+                                    "Level": {
+                                      "type": "long"
+                                    },
+                                    "NameEng": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "NameSwe": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "NeedsAttention": {
+                                      "type": "boolean"
+                                    },
+                                    "OrganizationParents": {
+                                      "properties": {
+                                        "FromDate": {
+                                          "type": "date"
+                                        },
+                                        "Id": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "ParentOrganizationData": {
+                                          "properties": {
+                                            "City": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "Country": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "CreatedAt": {
+                                              "type": "date"
+                                            },
+                                            "CreatedBy": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "DisplayNameEng": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "DisplayNameSwe": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "EndYear": {
+                                              "type": "long"
+                                            },
+                                            "GeoLat": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "GeoLong": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "HasIdentifiers": {
+                                              "type": "boolean"
+                                            },
+                                            "Id": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "IdentifierLdapCode": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "Identifiers": {
+                                              "properties": {
+                                                "CreatedAt": {
+                                                  "type": "date"
+                                                },
+                                                "CreatedBy": {
+                                                  "type": "text",
+                                                  "fields": {
+                                                    "keyword": {
+                                                      "type": "keyword",
+                                                      "ignore_above": 256
+                                                    }
+                                                  }
+                                                },
+                                                "Id": {
+                                                  "type": "text",
+                                                  "fields": {
+                                                    "keyword": {
+                                                      "type": "keyword",
+                                                      "ignore_above": 256
+                                                    }
+                                                  }
+                                                },
+                                                "IsActive": {
+                                                  "type": "boolean"
+                                                },
+                                                "Type": {
+                                                  "properties": {
+                                                    "DescriptionEng": {
+                                                      "type": "text",
+                                                      "fields": {
+                                                        "keyword": {
+                                                          "type": "keyword",
+                                                          "ignore_above": 256
+                                                        }
+                                                      }
+                                                    },
+                                                    "DescriptionSwe": {
+                                                      "type": "text",
+                                                      "fields": {
+                                                        "keyword": {
+                                                          "type": "keyword",
+                                                          "ignore_above": 256
+                                                        }
+                                                      }
+                                                    },
+                                                    "Id": {
+                                                      "type": "text",
+                                                      "fields": {
+                                                        "keyword": {
+                                                          "type": "keyword",
+                                                          "ignore_above": 256
+                                                        }
+                                                      }
+                                                    },
+                                                    "Value": {
+                                                      "type": "text",
+                                                      "fields": {
+                                                        "keyword": {
+                                                          "type": "keyword",
+                                                          "ignore_above": 256
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "Value": {
+                                                  "type": "text",
+                                                  "fields": {
+                                                    "keyword": {
+                                                      "type": "keyword",
+                                                      "ignore_above": 256
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "IdentifiersCount": {
+                                              "type": "long"
+                                            },
+                                            "IsActive": {
+                                              "type": "boolean"
+                                            },
+                                            "Level": {
+                                              "type": "long"
+                                            },
+                                            "NameEng": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "NameSwe": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "NeedsAttention": {
+                                              "type": "boolean"
+                                            },
+                                            "OrganizationTypes": {
+                                              "properties": {
+                                                "Id": {
+                                                  "type": "text",
+                                                  "fields": {
+                                                    "keyword": {
+                                                      "type": "keyword",
+                                                      "ignore_above": 256
+                                                    }
+                                                  }
+                                                },
+                                                "LegacyOrganizationTypeId": {
+                                                  "type": "long"
+                                                },
+                                                "NameEng": {
+                                                  "type": "text",
+                                                  "fields": {
+                                                    "keyword": {
+                                                      "type": "keyword",
+                                                      "ignore_above": 256
+                                                    }
+                                                  }
+                                                },
+                                                "NameSwe": {
+                                                  "type": "text",
+                                                  "fields": {
+                                                    "keyword": {
+                                                      "type": "keyword",
+                                                      "ignore_above": 256
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "PostalNo": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "StartYear": {
+                                              "type": "long"
+                                            },
+                                            "UpdatedAt": {
+                                              "type": "date"
+                                            },
+                                            "UpdatedBy": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "ValidatedBy": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "ValidatedDate": {
+                                              "type": "date"
+                                            }
+                                          }
+                                        },
+                                        "ParentOrganizationId": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "ToDate": {
+                                          "type": "date"
+                                        }
+                                      }
+                                    },
+                                    "OrganizationTypes": {
+                                      "properties": {
+                                        "Id": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "LegacyOrganizationTypeId": {
+                                          "type": "long"
+                                        },
+                                        "NameEng": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "NameSwe": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "PostalNo": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "StartYear": {
+                                      "type": "long"
+                                    },
+                                    "UpdatedAt": {
+                                      "type": "date"
+                                    },
+                                    "UpdatedBy": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "ValidatedBy": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "ValidatedDate": {
+                                      "type": "date"
+                                    }
+                                  }
+                                },
+                                "ParentOrganizationId": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "ToDate": {
+                                  "type": "date"
+                                }
+                              }
+                            },
+                            "OrganizationTypes": {
+                              "properties": {
+                                "Id": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "LegacyOrganizationTypeId": {
+                                  "type": "long"
+                                },
+                                "NameEng": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "NameSwe": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "PostalNo": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "StartYear": {
+                              "type": "long"
+                            },
+                            "UpdatedAt": {
+                              "type": "date"
+                            },
+                            "UpdatedBy": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "ValidatedBy": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "ValidatedDate": {
+                              "type": "date"
+                            }
+                          }
+                        },
+                        "ParentOrganizationId": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "ToDate": {
+                          "type": "date"
+                        }
+                      }
+                    },
+                    "OrganizationTypes": {
+                      "properties": {
+                        "Id": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "LegacyOrganizationTypeId": {
+                          "type": "integer"
+                        },
+                        "NameEng": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "NameSwe": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "PossibleDisplayPaths": {
+                      "properties": {
+                        "DisplayPathEng": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "DisplayPathSwe": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "PostalNo": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "StartYear": {
+                      "type": "integer"
+                    },
+                    "UpdatedAt": {
+                      "type": "date"
+                    },
+                    "UpdatedBy": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ValidatedBy": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ValidatedDate": {
+                      "type": "date"
+                    }
+                  }
+                },
+                "OrganizationId": {
+                  "type": "keyword"
+                },
+                "Priority": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "Source": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "StartDate": {
+                  "type": "date"
+                },
+                "TitleEng": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "TitleSwe": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "OrganizationHomeCount": {
+              "type": "integer"
+            },
+            "PdbCategories": {
+              "properties": {
+                "EndDate": {
+                  "type": "date"
+                },
+                "Id": {
+                  "type": "keyword"
+                },
+                "Name": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "StartDate": {
+                  "type": "date"
+                }
+              }
+            },
+            "SightedAt": {
+              "type": "date"
+            },
+            "SightedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "UpdatedAt": {
+              "type": "date"
+            },
+            "UpdatedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ValidatedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ValidatedDate": {
+              "type": "date"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sample_documents": [
+    {
+      "_index": "research-persons202506040921251965414",
+      "_type": "person",
+      "_id": "08e14f30-2797-4994-a9d0-01980f9db9fd",
+      "_score": 1.0,
+      "_source": {
+        "Id": "08e14f30-2797-4994-a9d0-01980f9db9fd",
+        "FirstName": "Viktoria",
+        "LastName": "de Carvalho",
+        "DisplayName": "Viktoria de Carvalho",
+        "BirthYear": 1999,
+        "IsActive": true,
+        "IsDeleted": false,
+        "HasOrganizationHome": true,
+        "HasIdentifiers": true,
+        "HasPublications": false,
+        "HasProjects": false,
+        "OrganizationHomeCount": 1,
+        "IdentifiersCount": 2,
+        "IdentifierCid": [
+          "devik"
+        ],
+        "IdentifierCplPersonId": [],
+        "IdentifierOrcid": [],
+        "Identifiers": [
+          {
+            "Id": "3d1bd21f-d4f7-42ff-81b5-14b60d75a266",
+            "Type": {
+              "Id": "d3ed8d39-36e6-e511-8298-001c42304a15",
+              "Value": "CID",
+              "DescriptionSwe": "Chalmers unika identifierare",
+              "DescriptionEng": "Chalmers identifier"
+            },
+            "CreatedBy": "robot/aurora",
+            "CreatedAt": "2023-09-14T03:30:26.357",
+            "IsActive": true,
+            "Value": "devik"
+          },
+          {
+            "Id": "65a50790-47eb-4161-9736-1a5d2a056882",
+            "Type": {
+              "Id": "ac5f6d86-bbb9-41a5-b4e4-065d921bd7be",
+              "Value": "EMAIL",
+              "DescriptionSwe": "E-postadress",
+              "DescriptionEng": "Email address"
+            },
+            "CreatedBy": "robot/aurora",
+            "CreatedAt": "2023-09-14T03:30:26.357",
+            "IsActive": true,
+            "Value": "devik@chalmers.se"
+          }
+        ],
+        "OrganizationHome": [
+          {
+            "Id": "c3dadad7-eaca-4333-887f-a8eda00cb19a",
+            "OrganizationId": "30b8384c-db66-4291-9b39-d16c899e0bf4",
+            "OrganizationData": {
+              "Id": "30b8384c-db66-4291-9b39-d16c899e0bf4",
+              "NameSwe": "Kemisk biologi",
+              "NameEng": "Chemical Biology",
+              "DisplayNameSwe": "Kemisk biologi",
+              "DisplayNameEng": "Chemical Biology",
+              "DisplayPathSwe": "Chalmers, Life sciences, Kemisk biologi",
+              "DisplayPathEng": "Chalmers, Life Sciences, Chemical Biology",
+              "DisplayPathShortSwe": "Chalmers, Life sciences, Kemisk biologi",
+              "DisplayPathShortEng": "Chalmers, Life Sciences, Chemical Biology",
+              "PossibleDisplayPaths": [
+                {
+                  "DisplayPathSwe": "Chalmers, Life sciences, Kemisk biologi",
+                  "DisplayPathEng": "Chalmers, Life Sciences, Chemical Biology"
+                },
+                {
+                  "DisplayPathSwe": "Chalmers, Biologi och bioteknik, Kemisk biologi",
+                  "DisplayPathEng": "Chalmers, Biology and Biological Engineering, Chemical Biology"
+                }
+              ],
+              "City": "Gothenburg",
+              "PostalNo": "41296",
+              "Country": "Sweden",
+              "GeoLat": "57.689118",
+              "GeoLong": "11.97869",
+              "Level": 2,
+              "StartYear": 2015,
+              "EndYear": 0,
+              "OrganizationTypes": [
+                {
+                  "Id": "7eb6c880-c63c-4465-9176-fbeb65951268",
+                  "NameSwe": "Chalmers, avdelning",
+                  "NameEng": "Chalmers, Sub-department",
+                  "LegacyOrganizationTypeId": 9
+                }
+              ],
+              "OrganizationParents": [
+                {
+                  "Id": "07582051-e7a6-423f-9595-3f1aa8779025",
+                  "FromDate": "2023-01-01T00:00:00Z",
+                  "ParentOrganizationId": "7dfd99fe-6e28-4581-99c2-b3bbb7de5573",
+                  "ParentOrganizationData": {
+                    "Id": "7dfd99fe-6e28-4581-99c2-b3bbb7de5573",
+                    "NameSwe": "Institutionen för life sciences",
+                    "NameEng": "Department of Life Sciences",
+                    "DisplayNameSwe": "Life sciences",
+                    "DisplayNameEng": "Life Sciences",
+                    "PossibleDisplayPaths": [],
+                    "City": "Gothenburg",
+                    "PostalNo": "41296",
+                    "Country": "Sweden",
+                    "GeoLat": "57.689118",
+                    "GeoLong": "11.97869",
+                    "Level": 1,
+                    "StartYear": 2023,
+                    "EndYear": 0,
+                    "OrganizationTypes": [
+                      {
+                        "Id": "03200d60-8856-4727-be16-76b97946eda2",
+                        "NameSwe": "Chalmers, institution",
+                        "NameEng": "Chalmers, Department",
+                        "LegacyOrganizationTypeId": 8
+                      }
+                    ],
+                    "OrganizationParents": [
+                      {
+                        "Id": "ab9b251a-f80f-4ae6-97b6-fa02eeebe72e",
+                        "FromDate": "2023-01-01T00:00:00Z",
+                        "ParentOrganizationId": "fcdf10f4-e25c-4890-afb5-0486eddd25c9",
+                        "ParentOrganizationData": {
+                          "Id": "fcdf10f4-e25c-4890-afb5-0486eddd25c9",
+                          "NameSwe": "Chalmers tekniska högskola AB",
+                          "NameEng": "Chalmers University of Technology",
+                          "DisplayNameSwe": "Chalmers",
+                          "DisplayNameEng": "Chalmers",
+                          "PossibleDisplayPaths": [],
+                          "City": "Gothenburg",
+                          "PostalNo": "41296",
+                          "Country": "Sweden",
+                          "GeoLat": "57.6891181",
+                          "GeoLong": "11.9786903",
+                          "Level": 0,
+                          "StartYear": 0,
+                          "EndYear": 0,
+                          "OrganizationTypes": [
+                            {
+                              "Id": "570464a0-ed4c-4a4c-bc49-c3e1e01c17a6",
+                              "NameSwe": "Lärosäte",
+                              "NameEng": "Site",
+                              "LegacyOrganizationTypeId": 6
+                            },
+                            {
+                              "Id": "7ca0b423-6dfe-4b7e-b18e-d32e2c8c34d2",
+                              "NameSwe": "Utgivare",
+                              "NameEng": "Publisher",
+                              "LegacyOrganizationTypeId": -1
+                            }
+                          ],
+                          "OrganizationParents": [],
+                          "ActiveOrganizationParentIds": [],
+                          "HasIdentifiers": true,
+                          "IdentifiersCount": 21,
+                          "Identifiers": [
+                            {
+                              "Id": "f5076128-dbec-4751-8b61-06b7b88d4512",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T08:40:56Z",
+                              "IsActive": true,
+                              "Value": "60000990"
+                            },
+                            {
+                              "Id": "9225149e-cb56-4d26-8181-2ad49bb808c5",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-03-13T16:28:51.277Z",
+                              "IsActive": true,
+                              "Value": "107916784"
+                            },
+                            {
+                              "Id": "af703856-7825-4ed9-94f5-3782d0628a5b",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:31:36.703Z",
+                              "IsActive": true,
+                              "Value": "120494265"
+                            },
+                            {
+                              "Id": "22f7b3be-b9b1-4f19-b2e2-43a12432d0d0",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:38.103Z",
+                              "IsActive": true,
+                              "Value": "101828255"
+                            },
+                            {
+                              "Id": "7215700e-7cc7-4a82-a45e-440846a84e29",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:37.197Z",
+                              "IsActive": true,
+                              "Value": "109342437"
+                            },
+                            {
+                              "Id": "66a43660-89c0-43f1-a363-538310f5b3ca",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:35.757Z",
+                              "IsActive": true,
+                              "Value": "101562763"
+                            },
+                            {
+                              "Id": "b1c50ddf-6df2-4a5f-b68f-55b29278f8e9",
+                              "Type": {
+                                "Id": "032617b7-e679-4793-b76b-841a89031aae",
+                                "Value": "LDAP_CODE",
+                                "DescriptionSwe": "LDAP-kod i PDB",
+                                "DescriptionEng": "LDAP code in PDB"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-03-13T16:23:55.107Z",
+                              "IsActive": true,
+                              "Value": "08rokjot"
+                            },
+                            {
+                              "Id": "9f11aca7-93ae-4ffe-9cd9-563a6f778053",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-04-16T06:41:47.387Z",
+                              "IsActive": true,
+                              "Value": "115551770"
+                            },
+                            {
+                              "Id": "7e41eaa0-4590-4a62-91ca-57fe602faf66",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:31:38.173Z",
+                              "IsActive": true,
+                              "Value": "120493272"
+                            },
+                            {
+                              "Id": "1fa67e52-afc7-4848-b051-6713baaa7849",
+                              "Type": {
+                                "Id": "9f287f13-7311-427f-81db-d7ab33f6539a",
+                                "Value": "ORG_URI",
+                                "DescriptionSwe": "URI till organisationen",
+                                "DescriptionEng": "URI to the organization"
+                              },
+                              "CreatedAt": "2017-10-06T14:35:46.2Z",
+                              "IsActive": true,
+                              "Value": "http://www.chalmers.se"
+                            },
+                            {
+                              "Id": "320441c2-5b71-4393-84d4-788e59c63abf",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:31:35.86Z",
+                              "IsActive": true,
+                              "Value": "120494273"
+                            },
+                            {
+                              "Id": "4cc37f51-a502-49ea-9d24-86d71631224e",
+                              "Type": {
+                                "Id": "5029830b-22c3-4782-be74-f71189e91061",
+                                "Value": "RESEARCH_ORGANIZATIONID",
+                                "DescriptionSwe": "Legacy-id i Research Projekt",
+                                "DescriptionEng": "Legacy id in Research for Projects"
+                              },
+                              "CreatedAt": "2018-05-21T12:48:15.55Z",
+                              "IsActive": true,
+                              "Value": "2199"
+                            },
+                            {
+                              "Id": "adc5fdf8-4e66-4181-8cf4-8737ce076360",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:31:37.28Z",
+                              "IsActive": true,
+                              "Value": "120493288"
+                            },
+                            {
+                              "Id": "67436de5-443f-4adf-ad8f-89b5b3632d17",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:08.57Z",
+                              "IsActive": true,
+                              "Value": "120493275"
+                            },
+                            {
+                              "Id": "47658dc2-b89d-45e4-9203-9310b7ada49c",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:08.04Z",
+                              "IsActive": true,
+                              "Value": "109345464"
+                            },
+                            {
+                              "Id": "9cb55d09-25c0-4f7c-9bf0-9386e25462c1",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:09.15Z",
+                              "IsActive": true,
+                              "Value": "120493282"
+                            },
+                            {
+                              "Id": "da393cac-2bb3-4aca-9820-ac10fca84153",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:07.507Z",
+                              "IsActive": true,
+                              "Value": "120493301"
+                            },
+                            {
+                              "Id": "dca20e4e-b48a-46cf-a83c-db7d3c8e308b",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:31:20Z",
+                              "IsActive": true,
+                              "Value": "60007328"
+                            },
+                            {
+                              "Id": "409797f6-7fc4-4f94-bcb8-e2662006809c",
+                              "Type": {
+                                "Id": "cdbd0e14-1568-42f3-bd48-68e4852ed0a9",
+                                "Value": "FUNDREF_ID",
+                                "DescriptionSwe": "Finansiärs-id från CrossRef (FundRef)",
+                                "DescriptionEng": "CrossRef (FundRef) Funder ID"
+                              },
+                              "CreatedAt": "2017-10-06T14:35:46.17Z",
+                              "IsActive": true,
+                              "Value": "http://dx.doi.org/10.13039/501100002835"
+                            },
+                            {
+                              "Id": "24053c55-55f9-4001-a226-ebca6ceec084",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-04-16T06:30:30.23Z",
+                              "IsActive": true,
+                              "Value": "120495942"
+                            },
+                            {
+                              "Id": "4f909e46-d7dc-40c7-9fe3-f2fdb7b021d1",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:36.447Z",
+                              "IsActive": true,
+                              "Value": "100820513"
+                            }
+                          ],
+                          "IdentifierLdapCode": [
+                            "08rokjot"
+                          ],
+                          "IdentifierCplDepartmentId": [],
+                          "CreatedBy": "system",
+                          "CreatedAt": "2022-01-10T10:15:57.103Z",
+                          "UpdatedBy": "organization/merge",
+                          "UpdatedAt": "2018-09-10T09:31:39.017Z",
+                          "ValidatedBy": "system",
+                          "ValidatedDate": "2018-01-24T14:58:41.89Z",
+                          "NeedsAttention": false,
+                          "IsActive": true
+                        }
+                      }
+                    ],
+                    "ActiveOrganizationParentIds": [
+                      "fcdf10f4-e25c-4890-afb5-0486eddd25c9"
+                    ],
+                    "HasIdentifiers": true,
+                    "IdentifiersCount": 2,
+                    "Identifiers": [
+                      {
+                        "Id": "3415e46c-acf5-4fbc-b77e-1e9821e4a63f",
+                        "Type": {
+                          "Id": "73bc8541-0a62-474f-aee5-6efe32247262",
+                          "Value": "RD_ORGID",
+                          "DescriptionSwe": "Raindance organisations-id",
+                          "DescriptionEng": "Raindance organization id"
+                        },
+                        "CreatedBy": "system",
+                        "CreatedAt": "2022-12-21T00:00:00Z",
+                        "IsActive": true,
+                        "Value": "28"
+                      },
+                      {
+                        "Id": "db077439-7694-41c3-baf0-496b8386f21f",
+                        "Type": {
+                          "Id": "032617b7-e679-4793-b76b-841a89031aae",
+                          "Value": "LDAP_CODE",
+                          "DescriptionSwe": "LDAP-kod i PDB",
+                          "DescriptionEng": "LDAP code in PDB"
+                        },
+                        "CreatedBy": "system",
+                        "CreatedAt": "2022-12-21T00:00:00Z",
+                        "IsActive": true,
+                        "Value": "28nindak"
+                      }
+                    ],
+                    "IdentifierLdapCode": [
+                      "28nindak"
+                    ],
+                    "IdentifierCplDepartmentId": [],
+                    "CreatedBy": "system",
+                    "CreatedAt": "2022-12-21T00:00:00Z",
+                    "ValidatedBy": "system",
+                    "ValidatedDate": "2022-12-21T00:00:00Z",
+                    "NeedsAttention": false,
+                    "IsActive": true
+                  }
+                },
+                {
+                  "Id": "9ce455cc-ffee-422c-9d27-a33f9de6f380",
+                  "FromDate": "2015-01-01T00:00:00Z",
+                  "ToDate": "2022-12-31T23:59:59Z",
+                  "ParentOrganizationId": "875776ce-5032-4aab-b5df-195e68aacce0",
+                  "ParentOrganizationData": {
+                    "Id": "875776ce-5032-4aab-b5df-195e68aacce0",
+                    "NameSwe": "Institutionen för biologi och bioteknik",
+                    "NameEng": "Department of Biology and Biological Engineering",
+                    "DisplayNameSwe": "Biologi och bioteknik",
+                    "DisplayNameEng": "Biology and Biological Engineering",
+                    "PossibleDisplayPaths": [],
+                    "City": "Gothenburg",
+                    "PostalNo": "41296",
+                    "Country": "Sweden",
+                    "GeoLat": "57.689118",
+                    "GeoLong": "11.97869",
+                    "Level": 0,
+                    "StartYear": 0,
+                    "EndYear": 0,
+                    "OrganizationTypes": [
+                      {
+                        "Id": "03200d60-8856-4727-be16-76b97946eda2",
+                        "NameSwe": "Chalmers, institution",
+                        "NameEng": "Chalmers, Department",
+                        "LegacyOrganizationTypeId": 8
+                      }
+                    ],
+                    "OrganizationParents": [
+                      {
+                        "Id": "e022537a-bc84-47e1-bade-f646bbfe3ecc",
+                        "ParentOrganizationId": "fcdf10f4-e25c-4890-afb5-0486eddd25c9",
+                        "ParentOrganizationData": {
+                          "Id": "fcdf10f4-e25c-4890-afb5-0486eddd25c9",
+                          "NameSwe": "Chalmers tekniska högskola AB",
+                          "NameEng": "Chalmers University of Technology",
+                          "DisplayNameSwe": "Chalmers",
+                          "DisplayNameEng": "Chalmers",
+                          "PossibleDisplayPaths": [],
+                          "City": "Gothenburg",
+                          "PostalNo": "41296",
+                          "Country": "Sweden",
+                          "GeoLat": "57.6891181",
+                          "GeoLong": "11.9786903",
+                          "Level": 0,
+                          "StartYear": 0,
+                          "EndYear": 0,
+                          "OrganizationTypes": [
+                            {
+                              "Id": "570464a0-ed4c-4a4c-bc49-c3e1e01c17a6",
+                              "NameSwe": "Lärosäte",
+                              "NameEng": "Site",
+                              "LegacyOrganizationTypeId": 6
+                            },
+                            {
+                              "Id": "7ca0b423-6dfe-4b7e-b18e-d32e2c8c34d2",
+                              "NameSwe": "Utgivare",
+                              "NameEng": "Publisher",
+                              "LegacyOrganizationTypeId": -1
+                            }
+                          ],
+                          "OrganizationParents": [],
+                          "ActiveOrganizationParentIds": [],
+                          "HasIdentifiers": true,
+                          "IdentifiersCount": 21,
+                          "Identifiers": [
+                            {
+                              "Id": "f5076128-dbec-4751-8b61-06b7b88d4512",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T08:40:56Z",
+                              "IsActive": true,
+                              "Value": "60000990"
+                            },
+                            {
+                              "Id": "9225149e-cb56-4d26-8181-2ad49bb808c5",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-03-13T16:28:51.277Z",
+                              "IsActive": true,
+                              "Value": "107916784"
+                            },
+                            {
+                              "Id": "af703856-7825-4ed9-94f5-3782d0628a5b",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:31:36.703Z",
+                              "IsActive": true,
+                              "Value": "120494265"
+                            },
+                            {
+                              "Id": "22f7b3be-b9b1-4f19-b2e2-43a12432d0d0",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:38.103Z",
+                              "IsActive": true,
+                              "Value": "101828255"
+                            },
+                            {
+                              "Id": "7215700e-7cc7-4a82-a45e-440846a84e29",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:37.197Z",
+                              "IsActive": true,
+                              "Value": "109342437"
+                            },
+                            {
+                              "Id": "66a43660-89c0-43f1-a363-538310f5b3ca",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:35.757Z",
+                              "IsActive": true,
+                              "Value": "101562763"
+                            },
+                            {
+                              "Id": "b1c50ddf-6df2-4a5f-b68f-55b29278f8e9",
+                              "Type": {
+                                "Id": "032617b7-e679-4793-b76b-841a89031aae",
+                                "Value": "LDAP_CODE",
+                                "DescriptionSwe": "LDAP-kod i PDB",
+                                "DescriptionEng": "LDAP code in PDB"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-03-13T16:23:55.107Z",
+                              "IsActive": true,
+                              "Value": "08rokjot"
+                            },
+                            {
+                              "Id": "9f11aca7-93ae-4ffe-9cd9-563a6f778053",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-04-16T06:41:47.387Z",
+                              "IsActive": true,
+                              "Value": "115551770"
+                            },
+                            {
+                              "Id": "7e41eaa0-4590-4a62-91ca-57fe602faf66",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:31:38.173Z",
+                              "IsActive": true,
+                              "Value": "120493272"
+                            },
+                            {
+                              "Id": "1fa67e52-afc7-4848-b051-6713baaa7849",
+                              "Type": {
+                                "Id": "9f287f13-7311-427f-81db-d7ab33f6539a",
+                                "Value": "ORG_URI",
+                                "DescriptionSwe": "URI till organisationen",
+                                "DescriptionEng": "URI to the organization"
+                              },
+                              "CreatedAt": "2017-10-06T14:35:46.2Z",
+                              "IsActive": true,
+                              "Value": "http://www.chalmers.se"
+                            },
+                            {
+                              "Id": "320441c2-5b71-4393-84d4-788e59c63abf",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:31:35.86Z",
+                              "IsActive": true,
+                              "Value": "120494273"
+                            },
+                            {
+                              "Id": "4cc37f51-a502-49ea-9d24-86d71631224e",
+                              "Type": {
+                                "Id": "5029830b-22c3-4782-be74-f71189e91061",
+                                "Value": "RESEARCH_ORGANIZATIONID",
+                                "DescriptionSwe": "Legacy-id i Research Projekt",
+                                "DescriptionEng": "Legacy id in Research for Projects"
+                              },
+                              "CreatedAt": "2018-05-21T12:48:15.55Z",
+                              "IsActive": true,
+                              "Value": "2199"
+                            },
+                            {
+                              "Id": "adc5fdf8-4e66-4181-8cf4-8737ce076360",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:31:37.28Z",
+                              "IsActive": true,
+                              "Value": "120493288"
+                            },
+                            {
+                              "Id": "67436de5-443f-4adf-ad8f-89b5b3632d17",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:08.57Z",
+                              "IsActive": true,
+                              "Value": "120493275"
+                            },
+                            {
+                              "Id": "47658dc2-b89d-45e4-9203-9310b7ada49c",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:08.04Z",
+                              "IsActive": true,
+                              "Value": "109345464"
+                            },
+                            {
+                              "Id": "9cb55d09-25c0-4f7c-9bf0-9386e25462c1",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:09.15Z",
+                              "IsActive": true,
+                              "Value": "120493282"
+                            },
+                            {
+                              "Id": "da393cac-2bb3-4aca-9820-ac10fca84153",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:07.507Z",
+                              "IsActive": true,
+                              "Value": "120493301"
+                            },
+                            {
+                              "Id": "dca20e4e-b48a-46cf-a83c-db7d3c8e308b",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:31:20Z",
+                              "IsActive": true,
+                              "Value": "60007328"
+                            },
+                            {
+                              "Id": "409797f6-7fc4-4f94-bcb8-e2662006809c",
+                              "Type": {
+                                "Id": "cdbd0e14-1568-42f3-bd48-68e4852ed0a9",
+                                "Value": "FUNDREF_ID",
+                                "DescriptionSwe": "Finansiärs-id från CrossRef (FundRef)",
+                                "DescriptionEng": "CrossRef (FundRef) Funder ID"
+                              },
+                              "CreatedAt": "2017-10-06T14:35:46.17Z",
+                              "IsActive": true,
+                              "Value": "http://dx.doi.org/10.13039/501100002835"
+                            },
+                            {
+                              "Id": "24053c55-55f9-4001-a226-ebca6ceec084",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-04-16T06:30:30.23Z",
+                              "IsActive": true,
+                              "Value": "120495942"
+                            },
+                            {
+                              "Id": "4f909e46-d7dc-40c7-9fe3-f2fdb7b021d1",
+                              "Type": {
+                                "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+                                "Value": "SCOPUS_AFID",
+                                "DescriptionSwe": "Scopus Affiliation ID",
+                                "DescriptionEng": "Scopus Affiliation ID"
+                              },
+                              "CreatedBy": "organization/merge",
+                              "CreatedAt": "2018-09-10T09:23:36.447Z",
+                              "IsActive": true,
+                              "Value": "100820513"
+                            }
+                          ],
+                          "IdentifierLdapCode": [
+                            "08rokjot"
+                          ],
+                          "IdentifierCplDepartmentId": [],
+                          "CreatedBy": "system",
+                          "CreatedAt": "2022-01-10T10:15:57.103Z",
+                          "UpdatedBy": "organization/merge",
+                          "UpdatedAt": "2018-09-10T09:31:39.017Z",
+                          "ValidatedBy": "system",
+                          "ValidatedDate": "2018-01-24T14:58:41.89Z",
+                          "NeedsAttention": false,
+                          "IsActive": true
+                        }
+                      }
+                    ],
+                    "ActiveOrganizationParentIds": [
+                      "fcdf10f4-e25c-4890-afb5-0486eddd25c9"
+                    ],
+                    "HasIdentifiers": true,
+                    "IdentifiersCount": 4,
+                    "Identifiers": [
+                      {
+                        "Id": "d5560c1c-7adc-4ff2-8524-0475b8114794",
+                        "Type": {
+                          "Id": "032617b7-e679-4793-b76b-841a89031aae",
+                          "Value": "LDAP_CODE",
+                          "DescriptionSwe": "LDAP-kod i PDB",
+                          "DescriptionEng": "LDAP code in PDB"
+                        },
+                        "IsActive": true,
+                        "Value": "28nindak"
+                      },
+                      {
+                        "Id": "c23ae518-3eb9-4562-89b3-187ee64e0718",
+                        "Type": {
+                          "Id": "5029830b-22c3-4782-be74-f71189e91061",
+                          "Value": "RESEARCH_ORGANIZATIONID",
+                          "DescriptionSwe": "Legacy-id i Research Projekt",
+                          "DescriptionEng": "Legacy id in Research for Projects"
+                        },
+                        "IsActive": true,
+                        "Value": "5486"
+                      },
+                      {
+                        "Id": "a71b5a76-0469-4cff-af98-35d3ef67aa81",
+                        "Type": {
+                          "Id": "8da906dd-8f1f-4e29-bc64-618d888e07a3",
+                          "Value": "CPL_DEPARTMENTID",
+                          "DescriptionSwe": "Legacy-id i CPL",
+                          "DescriptionEng": "Legacy id in CPL"
+                        },
+                        "IsActive": true,
+                        "Value": "1885"
+                      },
+                      {
+                        "Id": "b1748d71-83a9-4cab-8e77-d12dc6f02e2d",
+                        "Type": {
+                          "Id": "73bc8541-0a62-474f-aee5-6efe32247262",
+                          "Value": "RD_ORGID",
+                          "DescriptionSwe": "Raindance organisations-id",
+                          "DescriptionEng": "Raindance organization id"
+                        },
+                        "IsActive": true,
+                        "Value": "28"
+                      }
+                    ],
+                    "IdentifierLdapCode": [
+                      "28nindak"
+                    ],
+                    "IdentifierCplDepartmentId": [
+                      "1885"
+                    ],
+                    "ValidatedBy": "system",
+                    "ValidatedDate": "2018-02-14T12:43:31.363Z",
+                    "NeedsAttention": false,
+                    "IsActive": true
+                  }
+                }
+              ],
+              "ActiveOrganizationParentIds": [
+                "7dfd99fe-6e28-4581-99c2-b3bbb7de5573",
+                "fcdf10f4-e25c-4890-afb5-0486eddd25c9"
+              ],
+              "HasIdentifiers": true,
+              "IdentifiersCount": 3,
+              "Identifiers": [
+                {
+                  "Id": "8b7c0b8f-c2db-4e69-9f67-4a9668f70238",
+                  "Type": {
+                    "Id": "5029830b-22c3-4782-be74-f71189e91061",
+                    "Value": "RESEARCH_ORGANIZATIONID",
+                    "DescriptionSwe": "Legacy-id i Research Projekt",
+                    "DescriptionEng": "Legacy id in Research for Projects"
+                  },
+                  "IsActive": true,
+                  "Value": "5509"
+                },
+                {
+                  "Id": "13a6add5-80ae-464e-be77-9e80b2475815",
+                  "Type": {
+                    "Id": "8da906dd-8f1f-4e29-bc64-618d888e07a3",
+                    "Value": "CPL_DEPARTMENTID",
+                    "DescriptionSwe": "Legacy-id i CPL",
+                    "DescriptionEng": "Legacy id in CPL"
+                  },
+                  "IsActive": true,
+                  "Value": "1903"
+                },
+                {
+                  "Id": "a372fe95-af1b-45fb-84ce-f14c380bd51f",
+                  "Type": {
+                    "Id": "032617b7-e679-4793-b76b-841a89031aae",
+                    "Value": "LDAP_CODE",
+                    "DescriptionSwe": "LDAP-kod i PDB",
+                    "DescriptionEng": "LDAP code in PDB"
+                  },
+                  "IsActive": true,
+                  "Value": "38vesbif"
+                }
+              ],
+              "IdentifierLdapCode": [
+                "38vesbif"
+              ],
+              "IdentifierCplDepartmentId": [
+                "1903"
+              ],
+              "UpdatedBy": "system",
+              "UpdatedAt": "2022-12-21T12:07:20.92Z",
+              "ValidatedBy": "system",
+              "ValidatedDate": "2018-02-14T12:43:31.363Z",
+              "NeedsAttention": false,
+              "IsActive": true
+            },
+            "TitleSwe": "Doktorand",
+            "TitleEng": "Doctoral Student",
+            "StartDate": "2023-09-18T00:00:00",
+            "EndDate": "2027-09-18T00:00:00",
+            "Source": "primula_import",
+            "Priority": "2"
+          }
+        ],
+        "PdbCategories": [
+          {
+            "Id": "461b5e3e-2413-416f-8b9f-dee6dce0aa2b",
+            "Name": "chalmers_employee",
+            "StartDate": "2023-09-04T00:00:00",
+            "EndDate": "2027-09-18T00:00:00"
+          }
+        ],
+        "CreatedBy": "robot/aurora",
+        "CreatedAt": "2023-09-14T03:30:26.323",
+        "UpdatedBy": "robot/aurora",
+        "UpdatedAt": "2025-04-25T03:25:15.49",
+        "SightedBy": "robot/aurora",
+        "SightedAt": "2025-06-02T03:21:06.013",
+        "NeedsAttention": false
+      }
+    },
+    {
+      "_index": "research-persons202506040921251965414",
+      "_type": "person",
+      "_id": "bde92c58-80ac-49f2-8544-0196a670f378",
+      "_score": 1.0,
+      "_source": {
+        "Id": "bde92c58-80ac-49f2-8544-0196a670f378",
+        "FirstName": "Yiqian",
+        "LastName": "Wu",
+        "DisplayName": "Yiqian Wu",
+        "BirthYear": 0,
+        "IsActive": false,
+        "IsDeleted": false,
+        "HasOrganizationHome": false,
+        "HasIdentifiers": true,
+        "HasPublications": true,
+        "HasProjects": false,
+        "OrganizationHomeCount": 0,
+        "IdentifiersCount": 1,
+        "IdentifierCid": [],
+        "IdentifierCplPersonId": [],
+        "IdentifierOrcid": [],
+        "Identifiers": [
+          {
+            "Id": "35a2507c-5de7-4a2d-ab77-6effef587f9c",
+            "Type": {
+              "Id": "ac5f6d86-bbb9-41a5-b4e4-065d921bd7be",
+              "Value": "EMAIL",
+              "DescriptionSwe": "E-postadress",
+              "DescriptionEng": "Email address"
+            },
+            "CreatedAt": "2023-07-23T00:53:25.43",
+            "IsActive": true,
+            "Value": "yiqian@student.chalmers.se"
+          }
+        ],
+        "OrganizationHome": [],
+        "PdbCategories": [],
+        "CreatedBy": "ziming",
+        "CreatedAt": "2023-07-23T00:53:25.173",
+        "SightedBy": "ziming",
+        "SightedAt": "2023-07-23T00:53:25.173",
+        "NeedsAttention": true
+      }
+    },
+    {
+      "_index": "research-persons202506040921251965414",
+      "_type": "person",
+      "_id": "27e40d99-f4f7-4330-af26-01992af67c32",
+      "_score": 1.0,
+      "_source": {
+        "Id": "27e40d99-f4f7-4330-af26-01992af67c32",
+        "FirstName": "P",
+        "LastName": "Brearley",
+        "DisplayName": "P Brearley",
+        "BirthYear": 0,
+        "IsActive": false,
+        "IsDeleted": false,
+        "HasOrganizationHome": false,
+        "HasIdentifiers": false,
+        "HasPublications": true,
+        "HasProjects": false,
+        "OrganizationHomeCount": 0,
+        "IdentifiersCount": 0,
+        "IdentifierCid": [],
+        "IdentifierCplPersonId": [],
+        "IdentifierOrcid": [],
+        "Identifiers": [],
+        "OrganizationHome": [],
+        "PdbCategories": [],
+        "CreatedBy": "lipatn",
+        "CreatedAt": "2019-11-21T09:45:33.617",
+        "SightedBy": "lipatn",
+        "SightedAt": "2019-11-21T09:45:33.617",
+        "NeedsAttention": true
+      }
+    }
+  ]
+}

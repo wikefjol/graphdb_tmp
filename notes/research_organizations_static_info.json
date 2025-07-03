@@ -1,0 +1,1486 @@
+{
+  "index_name": "research-organizations-static",
+  "explored_at": "2025-06-25 15:03:11",
+  "document_count": 18043,
+  "size_info": "82.3mb",
+  "field_names": [],
+  "mapping": {
+    "research-organizations-static": {
+      "mappings": {
+        "organization": {
+          "properties": {
+            "ActiveOrganizationParentIds": {
+              "type": "keyword"
+            },
+            "City": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "Country": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "CreatedAt": {
+              "type": "date"
+            },
+            "CreatedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DeletedAt": {
+              "type": "date"
+            },
+            "DeletedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DisplayNameEng": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DisplayNameSwe": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DisplayPathEng": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DisplayPathShortEng": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DisplayPathShortSwe": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DisplayPathSwe": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "EndYear": {
+              "type": "integer"
+            },
+            "GeoLat": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "GeoLong": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "HasIdentifiers": {
+              "type": "boolean"
+            },
+            "Id": {
+              "type": "keyword"
+            },
+            "IdentifierCplDepartmentId": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "IdentifierLdapCode": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "Identifiers": {
+              "type": "nested",
+              "properties": {
+                "CreatedAt": {
+                  "type": "date"
+                },
+                "CreatedBy": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "Id": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "IsActive": {
+                  "type": "boolean"
+                },
+                "Type": {
+                  "properties": {
+                    "DescriptionEng": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DescriptionSwe": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Id": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Value": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "UpdatedAt": {
+                  "type": "date"
+                },
+                "UpdatedBy": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "Value": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "IdentifiersCount": {
+              "type": "integer"
+            },
+            "IsActive": {
+              "type": "boolean"
+            },
+            "IsReplacedById": {
+              "type": "keyword"
+            },
+            "Level": {
+              "type": "integer"
+            },
+            "NameEng": {
+              "type": "text",
+              "analyzer": "organization_name_autosuggest_analyzer",
+              "search_analyzer": "organization_search_analyzer"
+            },
+            "NameSwe": {
+              "type": "text",
+              "analyzer": "organization_name_autosuggest_analyzer",
+              "search_analyzer": "organization_search_analyzer"
+            },
+            "NeedsAttention": {
+              "type": "boolean"
+            },
+            "OrganizationParents": {
+              "properties": {
+                "FromDate": {
+                  "type": "date"
+                },
+                "Id": {
+                  "type": "keyword"
+                },
+                "ParentOrganizationData": {
+                  "properties": {
+                    "ActiveOrganizationParentIds": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "City": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Country": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "CreatedAt": {
+                      "type": "date"
+                    },
+                    "CreatedBy": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DisplayNameEng": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DisplayNameSwe": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "EndYear": {
+                      "type": "long"
+                    },
+                    "GeoLat": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "GeoLong": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "HasIdentifiers": {
+                      "type": "boolean"
+                    },
+                    "Id": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "IdentifierCplDepartmentId": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "IdentifierLdapCode": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Identifiers": {
+                      "properties": {
+                        "CreatedAt": {
+                          "type": "date"
+                        },
+                        "CreatedBy": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "Id": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "IsActive": {
+                          "type": "boolean"
+                        },
+                        "Type": {
+                          "properties": {
+                            "DescriptionEng": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "DescriptionSwe": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "Id": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "Value": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "IdentifiersCount": {
+                      "type": "long"
+                    },
+                    "IsActive": {
+                      "type": "boolean"
+                    },
+                    "Level": {
+                      "type": "long"
+                    },
+                    "NameEng": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "NameSwe": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "NeedsAttention": {
+                      "type": "boolean"
+                    },
+                    "OrganizationParents": {
+                      "properties": {
+                        "FromDate": {
+                          "type": "date"
+                        },
+                        "Id": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "ParentOrganizationData": {
+                          "properties": {
+                            "ActiveOrganizationParentIds": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "City": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "Country": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "CreatedAt": {
+                              "type": "date"
+                            },
+                            "CreatedBy": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "DisplayNameEng": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "DisplayNameSwe": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "EndYear": {
+                              "type": "long"
+                            },
+                            "GeoLat": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "GeoLong": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "HasIdentifiers": {
+                              "type": "boolean"
+                            },
+                            "Id": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "IdentifierCplDepartmentId": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "IdentifierLdapCode": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "Identifiers": {
+                              "properties": {
+                                "CreatedAt": {
+                                  "type": "date"
+                                },
+                                "CreatedBy": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "Id": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "IsActive": {
+                                  "type": "boolean"
+                                },
+                                "Type": {
+                                  "properties": {
+                                    "DescriptionEng": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "DescriptionSwe": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "Id": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "Value": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "IdentifiersCount": {
+                              "type": "long"
+                            },
+                            "IsActive": {
+                              "type": "boolean"
+                            },
+                            "Level": {
+                              "type": "long"
+                            },
+                            "NameEng": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "NameSwe": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "NeedsAttention": {
+                              "type": "boolean"
+                            },
+                            "OrganizationParents": {
+                              "properties": {
+                                "FromDate": {
+                                  "type": "date"
+                                },
+                                "Id": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "ParentOrganizationData": {
+                                  "properties": {
+                                    "City": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "Country": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "CreatedAt": {
+                                      "type": "date"
+                                    },
+                                    "CreatedBy": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "DisplayNameEng": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "DisplayNameSwe": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "EndYear": {
+                                      "type": "long"
+                                    },
+                                    "GeoLat": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "GeoLong": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "HasIdentifiers": {
+                                      "type": "boolean"
+                                    },
+                                    "Id": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "IdentifierLdapCode": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "Identifiers": {
+                                      "properties": {
+                                        "CreatedAt": {
+                                          "type": "date"
+                                        },
+                                        "CreatedBy": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "Id": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "IsActive": {
+                                          "type": "boolean"
+                                        },
+                                        "Type": {
+                                          "properties": {
+                                            "DescriptionEng": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "DescriptionSwe": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "Id": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "Value": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "Value": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "IdentifiersCount": {
+                                      "type": "long"
+                                    },
+                                    "IsActive": {
+                                      "type": "boolean"
+                                    },
+                                    "Level": {
+                                      "type": "long"
+                                    },
+                                    "NameEng": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "NameSwe": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "NeedsAttention": {
+                                      "type": "boolean"
+                                    },
+                                    "OrganizationTypes": {
+                                      "properties": {
+                                        "Id": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "LegacyOrganizationTypeId": {
+                                          "type": "long"
+                                        },
+                                        "NameEng": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "NameSwe": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "PostalNo": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "StartYear": {
+                                      "type": "long"
+                                    },
+                                    "UpdatedAt": {
+                                      "type": "date"
+                                    },
+                                    "UpdatedBy": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "ValidatedBy": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "ValidatedDate": {
+                                      "type": "date"
+                                    }
+                                  }
+                                },
+                                "ParentOrganizationId": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "ToDate": {
+                                  "type": "date"
+                                }
+                              }
+                            },
+                            "OrganizationTypes": {
+                              "properties": {
+                                "Id": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "LegacyOrganizationTypeId": {
+                                  "type": "long"
+                                },
+                                "NameEng": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "NameSwe": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "PostalNo": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "StartYear": {
+                              "type": "long"
+                            },
+                            "UpdatedAt": {
+                              "type": "date"
+                            },
+                            "UpdatedBy": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "ValidatedBy": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "ValidatedDate": {
+                              "type": "date"
+                            }
+                          }
+                        },
+                        "ParentOrganizationId": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "ToDate": {
+                          "type": "date"
+                        }
+                      }
+                    },
+                    "OrganizationTypes": {
+                      "properties": {
+                        "Id": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "LegacyOrganizationTypeId": {
+                          "type": "long"
+                        },
+                        "NameEng": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "NameSwe": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "PostalNo": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "StartYear": {
+                      "type": "long"
+                    },
+                    "UpdatedAt": {
+                      "type": "date"
+                    },
+                    "UpdatedBy": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ValidatedBy": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ValidatedDate": {
+                      "type": "date"
+                    }
+                  }
+                },
+                "ParentOrganizationId": {
+                  "type": "keyword"
+                },
+                "ToDate": {
+                  "type": "date"
+                }
+              }
+            },
+            "OrganizationTypes": {
+              "properties": {
+                "Id": {
+                  "type": "keyword"
+                },
+                "LegacyOrganizationTypeId": {
+                  "type": "integer"
+                },
+                "NameEng": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "NameSwe": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "PossibleDisplayPaths": {
+              "properties": {
+                "DisplayPathEng": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "DisplayPathSwe": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "PostalNo": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "StartYear": {
+              "type": "integer"
+            },
+            "UpdatedAt": {
+              "type": "date"
+            },
+            "UpdatedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ValidatedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ValidatedDate": {
+              "type": "date"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sample_documents": [
+    {
+      "_index": "research-organizations-static",
+      "_type": "organization",
+      "_id": "12926f37-bbd4-436e-9c5f-6dc6b5809e4d",
+      "_score": 1.0,
+      "_source": {
+        "Id": "12926f37-bbd4-436e-9c5f-6dc6b5809e4d",
+        "NameSwe": "Autoneum",
+        "NameEng": "Autoneum",
+        "DisplayNameSwe": "Autoneum",
+        "DisplayNameEng": "Autoneum",
+        "DisplayPathSwe": "Autoneum",
+        "DisplayPathEng": "Autoneum",
+        "DisplayPathShortSwe": "Autoneum",
+        "DisplayPathShortEng": "Autoneum",
+        "PossibleDisplayPaths": [
+          {
+            "DisplayPathSwe": "Autoneum",
+            "DisplayPathEng": "Autoneum"
+          }
+        ],
+        "City": "Winterthur",
+        "Country": "Switzerland",
+        "GeoLat": "47.4960383",
+        "GeoLong": "8.7022018",
+        "Level": 0,
+        "StartYear": 0,
+        "EndYear": 0,
+        "OrganizationTypes": [
+          {
+            "Id": "7783463b-e852-458d-be30-7aefe0ab7f5c",
+            "NameSwe": "Privat",
+            "NameEng": "Private",
+            "LegacyOrganizationTypeId": 2
+          }
+        ],
+        "OrganizationParents": [],
+        "ActiveOrganizationParentIds": [],
+        "HasIdentifiers": true,
+        "IdentifiersCount": 2,
+        "Identifiers": [
+          {
+            "Id": "a748680e-2c4d-4501-b774-51f250ead3d3",
+            "Type": {
+              "Id": "fda04edc-6fce-11ec-90d6-0242ac120003",
+              "Value": "ROR_ID",
+              "DescriptionSwe": "Organisationskoder (ROR ID) från ror.org.",
+              "DescriptionEng": "Organization (ROR ID) codes from ror.org."
+            },
+            "CreatedBy": "system",
+            "CreatedAt": "2023-05-26T11:30:00",
+            "IsActive": true,
+            "Value": "https://ror.org/04zg05e03"
+          },
+          {
+            "Id": "2983614c-aa82-48f4-b944-87e36b90225a",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "import/scopus",
+            "CreatedAt": "2019-03-18T05:30:10.853",
+            "IsActive": true,
+            "Value": "113153085"
+          }
+        ],
+        "IdentifierLdapCode": [],
+        "IdentifierCplDepartmentId": [],
+        "CreatedBy": "import/scopus",
+        "CreatedAt": "2019-03-18T05:30:10.853",
+        "UpdatedBy": "graner",
+        "UpdatedAt": "2021-11-12T14:42:11.663",
+        "ValidatedBy": "graner",
+        "ValidatedDate": "2021-11-12T14:42:10.897",
+        "NeedsAttention": false,
+        "IsActive": true
+      }
+    },
+    {
+      "_index": "research-organizations-static",
+      "_type": "organization",
+      "_id": "2de6eb1e-6c92-46eb-b8c3-6dca710d125c",
+      "_score": 1.0,
+      "_source": {
+        "Id": "2de6eb1e-6c92-46eb-b8c3-6dca710d125c",
+        "NameSwe": "Univ Antioquia UdeA",
+        "NameEng": "Univ Antioquia UdeA",
+        "DisplayNameSwe": "Univ Antioquia UdeA",
+        "DisplayNameEng": "Univ Antioquia UdeA",
+        "DisplayPathSwe": "Univ Antioquia UdeA",
+        "DisplayPathEng": "Univ Antioquia UdeA",
+        "DisplayPathShortSwe": "Univ Antioquia UdeA",
+        "DisplayPathShortEng": "Univ Antioquia UdeA",
+        "PossibleDisplayPaths": [
+          {
+            "DisplayPathSwe": "Univ Antioquia UdeA",
+            "DisplayPathEng": "Univ Antioquia UdeA"
+          }
+        ],
+        "Country": "Colombia",
+        "Level": 0,
+        "StartYear": 0,
+        "EndYear": 0,
+        "OrganizationTypes": [
+          {
+            "Id": "65f58e92-6d3a-4608-9304-f2565deb2ade",
+            "NameSwe": "Okänd",
+            "NameEng": "Unknown",
+            "LegacyOrganizationTypeId": 13
+          }
+        ],
+        "OrganizationParents": [],
+        "ActiveOrganizationParentIds": [],
+        "HasIdentifiers": true,
+        "IdentifiersCount": 1,
+        "Identifiers": [
+          {
+            "Id": "bbbdcc31-c657-4a28-b615-c23f8e522d07",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "import/wos",
+            "CreatedAt": "2024-04-18T08:19:10.19",
+            "IsActive": true,
+            "Value": "univ antioquia udea"
+          }
+        ],
+        "IdentifierLdapCode": [],
+        "IdentifierCplDepartmentId": [],
+        "CreatedBy": "import/wos",
+        "CreatedAt": "2024-04-18T08:19:10.19",
+        "NeedsAttention": true,
+        "IsActive": true
+      }
+    },
+    {
+      "_index": "research-organizations-static",
+      "_type": "organization",
+      "_id": "2cc73346-cde1-4f1e-b7ec-6dcc74e8c8fb",
+      "_score": 1.0,
+      "_source": {
+        "Id": "2cc73346-cde1-4f1e-b7ec-6dcc74e8c8fb",
+        "NameSwe": "World Energy Council",
+        "NameEng": "World Energy Council",
+        "DisplayNameSwe": "World Energy Council",
+        "DisplayNameEng": "World Energy Council",
+        "DisplayPathSwe": "World Energy Council",
+        "DisplayPathEng": "World Energy Council",
+        "DisplayPathShortSwe": "World Energy Council",
+        "DisplayPathShortEng": "World Energy Council",
+        "PossibleDisplayPaths": [
+          {
+            "DisplayPathSwe": "World Energy Council",
+            "DisplayPathEng": "World Energy Council"
+          }
+        ],
+        "City": "London",
+        "Country": "United Kingdom",
+        "Level": 0,
+        "StartYear": 0,
+        "EndYear": 0,
+        "OrganizationTypes": [
+          {
+            "Id": "65f58e92-6d3a-4608-9304-f2565deb2ade",
+            "NameSwe": "Okänd",
+            "NameEng": "Unknown",
+            "LegacyOrganizationTypeId": 13
+          }
+        ],
+        "OrganizationParents": [],
+        "ActiveOrganizationParentIds": [],
+        "HasIdentifiers": true,
+        "IdentifiersCount": 1,
+        "Identifiers": [
+          {
+            "Id": "29a1e461-af4b-45df-a49c-01cf4adbf93f",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "import/scopus",
+            "CreatedAt": "2024-06-26T04:30:55.067",
+            "IsActive": true,
+            "Value": "116581405"
+          }
+        ],
+        "IdentifierLdapCode": [],
+        "IdentifierCplDepartmentId": [],
+        "CreatedBy": "import/scopus",
+        "CreatedAt": "2024-06-26T04:30:55.067",
+        "NeedsAttention": true,
+        "IsActive": true
+      }
+    }
+  ]
+}

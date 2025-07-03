@@ -1,0 +1,317 @@
+{
+  "index_name": "research-serials-static",
+  "explored_at": "2025-06-25 15:03:11",
+  "document_count": 40588,
+  "size_info": "73.1mb",
+  "field_names": [],
+  "mapping": {
+    "research-serials-static": {
+      "mappings": {
+        "serial": {
+          "properties": {
+            "Country": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "CreatedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "CreatedDate": {
+              "type": "date"
+            },
+            "EndYear": {
+              "type": "integer"
+            },
+            "Id": {
+              "type": "keyword"
+            },
+            "Identifiers": {
+              "properties": {
+                "CreatedAt": {
+                  "type": "date"
+                },
+                "CreatedBy": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "Id": {
+                  "type": "keyword"
+                },
+                "IsActive": {
+                  "type": "boolean"
+                },
+                "Type": {
+                  "properties": {
+                    "DescriptionEng": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DescriptionSwe": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Value": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "UpdatedAt": {
+                  "type": "date"
+                },
+                "UpdatedBy": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "Value": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    },
+                    "sansdash": {
+                      "type": "text",
+                      "analyzer": "standard_dash_removing_analyzer"
+                    }
+                  }
+                }
+              }
+            },
+            "IsDeleted": {
+              "type": "boolean"
+            },
+            "IsOpenAccess": {
+              "type": "boolean"
+            },
+            "IsPeerReviewed": {
+              "type": "boolean"
+            },
+            "Publisher": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "StartYear": {
+              "type": "integer"
+            },
+            "Title": {
+              "type": "text",
+              "analyzer": "serial_name_autosuggest_analyzer",
+              "search_analyzer": "person_serial_analyzer"
+            },
+            "Type": {
+              "properties": {
+                "DescriptionEng": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "DescriptionSwe": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "Id": {
+                  "type": "keyword"
+                },
+                "Value": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "UpdatedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "UpdatedDate": {
+              "type": "date"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sample_documents": [
+    {
+      "_index": "research-serials-static",
+      "_type": "serial",
+      "_id": "18d8743d-739a-41ed-9ad8-1a22f2304e62",
+      "_score": 1.0,
+      "_source": {
+        "Id": "18d8743d-739a-41ed-9ad8-1a22f2304e62",
+        "Title": "Nonwovens Report International",
+        "Type": {
+          "Id": "4aad0924-7da3-4d99-9f05-ea86f121f932",
+          "Value": "JOURNAL",
+          "DescriptionSwe": "Tidskrift",
+          "DescriptionEng": "Journal"
+        },
+        "StartYear": 1989,
+        "EndYear": 2005,
+        "Publisher": "World Textile Publications Ltd",
+        "Country": "United Kingdom",
+        "Identifiers": [
+          {
+            "Id": "66fb6c6b-15b2-4b80-b3d0-4c4294d96fd2",
+            "Type": {
+              "Value": "SCOPUS_SOURCE_ID",
+              "DescriptionSwe": "Identifierare av källa (tidskrift etc) i Scopus",
+              "DescriptionEng": "Elsevier Scopus Source Identifier"
+            },
+            "IsActive": true,
+            "Value": "16492"
+          },
+          {
+            "Id": "506fcfcd-bfa9-490f-a071-a21865b2d82e",
+            "Type": {
+              "Value": "ISSN"
+            },
+            "IsActive": true,
+            "Value": "0953-1092"
+          }
+        ],
+        "IsOpenAccess": false,
+        "IsPeerReviewed": false,
+        "IsDeleted": false,
+        "CreatedDate": "2017-10-06T09:54:40.2",
+        "UpdatedBy": "autobot",
+        "UpdatedDate": "2023-10-18T03:03:26.89"
+      }
+    },
+    {
+      "_index": "research-serials-static",
+      "_type": "serial",
+      "_id": "47e972a4-9af1-4ba9-a2f5-1a23d8236c90",
+      "_score": 1.0,
+      "_source": {
+        "Id": "47e972a4-9af1-4ba9-a2f5-1a23d8236c90",
+        "Title": "Nanomaterials and Nanotechnology",
+        "Type": {
+          "Id": "4aad0924-7da3-4d99-9f05-ea86f121f932",
+          "Value": "JOURNAL",
+          "DescriptionSwe": "Tidskrift",
+          "DescriptionEng": "Journal"
+        },
+        "StartYear": 2011,
+        "Publisher": "John Wiley and Sons Ltd",
+        "Country": "Croatia",
+        "Identifiers": [
+          {
+            "Id": "4fbea3b2-76b0-4419-a0b0-46aa5a023fdf",
+            "Type": {
+              "Value": "SCOPUS_SOURCE_ID",
+              "DescriptionSwe": "Identifierare av källa (tidskrift etc) i Scopus",
+              "DescriptionEng": "Elsevier Scopus Source Identifier"
+            },
+            "IsActive": true,
+            "Value": "21100284945"
+          },
+          {
+            "Id": "2c7b2431-a1c2-4217-8c09-d7ab4a1625b7",
+            "Type": {
+              "Value": "EISSN",
+              "DescriptionSwe": "Electronic International Standard Serial Number",
+              "DescriptionEng": "Electronic International Standard Serial Number"
+            },
+            "IsActive": true,
+            "Value": "1847-9804"
+          }
+        ],
+        "IsOpenAccess": true,
+        "IsPeerReviewed": true,
+        "IsDeleted": false,
+        "CreatedDate": "2017-10-06T09:51:34.073",
+        "UpdatedBy": "autobot",
+        "UpdatedDate": "2025-01-13T19:46:07.063"
+      }
+    },
+    {
+      "_index": "research-serials-static",
+      "_type": "serial",
+      "_id": "8dc8cf15-b3f4-40b1-90e5-1a253588bd5f",
+      "_score": 1.0,
+      "_source": {
+        "Id": "8dc8cf15-b3f4-40b1-90e5-1a253588bd5f",
+        "Title": "1st International Workshop on Open Source Modelling and Simulation of Energy Systems, OSMSES 2022 - Proceedings",
+        "Identifiers": [
+          {
+            "Id": "2788cc61-8061-4889-b12f-1a958463e38e",
+            "Type": {
+              "Value": "SCOPUS_SOURCE_ID",
+              "DescriptionSwe": "Identifierare av källa (tidskrift etc) i Scopus",
+              "DescriptionEng": "Elsevier Scopus Source Identifier"
+            },
+            "CreatedBy": "import/scopus",
+            "CreatedAt": "2022-06-05T04:33:37.53",
+            "IsActive": true,
+            "Value": "21101089557"
+          }
+        ],
+        "IsOpenAccess": false,
+        "IsPeerReviewed": false,
+        "IsDeleted": false,
+        "CreatedDate": "2022-06-05T04:33:37.53"
+      }
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+# Chalmers Research Database Analysis
+
+**Date:** 2025-06-25  
+**Database:** elk-test.cthb.se:9200  
+**Version:** 6.8.23 (OpenSearch compatible)  
+**Total Indices:** 133 (14 research-focused)
+
+## Executive Summary
+
+Successfully connected to the Chalmers research database and documented 14 research indices containing over 1.4 million research documents. The database follows the structure outlined in the documentation with 5 main static indices plus versioned/cached variants.
+
+## Core Research Indices
+
+### 1. Publications (research-publications-static)
+- **Documents:** 95,697
+- **Size:** 7.8 GB
+- **Purpose:** Main publications repository
+- **Schema:** Complex nested structure with Abstract, Categories, Authors, Identifiers, etc.
+- **Key Fields:** Title, Abstract, Year, Language, DOI, Authors, Organizations
+
+### 2. Organizations (research-organizations-static)  
+- **Documents:** 18,043
+- **Size:** 82.3 MB
+- **Purpose:** Internal Chalmers and external collaboration organizations
+- **Key Fields:** Name, City, Country, Identifiers, ParentIds
+
+### 3. Persons (research-persons-static)
+- **Documents:** 195,940  
+- **Size:** 965 MB
+- **Purpose:** Researchers and staff with identifiers
+- **Key Fields:** Names, Identifiers (ORCID), Affiliations
+
+### 4. Projects (research-projects-static)
+- **Documents:** 6,782
+- **Size:** 603 MB  
+- **Purpose:** Research projects with metadata
+- **Key Fields:** Title, Description, Participants, Funding
+
+### 5. Serials (research-serials-static)
+- **Documents:** 40,588
+- **Size:** 73.1 MB
+- **Purpose:** Scientific journals and publication venues
+- **Key Fields:** Title, ISSN, Publisher information
+
+## Additional Indices
+
+### Cache and Events
+- **research-publications-cache:** 179,986 docs (18.2 GB) - Enhanced publication data
+- **research-publications-events:** 501,522 docs (352.5 MB) - Publication activity events
+- **research-differences:** 434 docs (844.6 KB) - Data difference tracking
+
+### Timestamped Versions
+Multiple dated versions of core indices (format: `research-*YYYYMMDDHHMM*`):
+- Publications versions: ~95K-96K docs each
+- Organizations versions: ~18K docs each  
+- Projects versions: ~6.8K docs each
+- Persons versions: ~196K docs each
+
+## Database Architecture
+
+### Technology Stack
+- **Engine:** OpenSearch/Elasticsearch 6.8.23
+- **Authentication:** Basic auth with credentials
+- **SSL:** Required (HTTPS)
+- **Mapping:** Type-based mappings (ES 6.x format)
+
+### Schema Structure
+- **Nested Objects:** Complex hierarchical data structures
+- **Identifiers:** Extensive PID support (DOI, ORCID, ROR, etc.)
+- **Multilingual:** Support for Swedish and English content
+- **Temporal:** CreatedAt, UpdatedAt, DeletedAt fields
+- **Versioning:** Soft delete pattern with IsActive flags
+
+## Key Findings
+
+### Data Quality
+- **Completeness:** High document counts across all indices
+- **Identifiers:** Rich PID ecosystem for interoperability
+- **Relationships:** Well-structured cross-references between entities
+
+### Performance Considerations
+- **Large Datasets:** Publications cache (18.2 GB) is the largest index
+- **Search Optimization:** Text fields with keyword sub-fields for exact matching
+- **Indexing:** Proper field type mapping for efficient queries
+
+### API Compatibility
+- **Query Format:** Supports full Elasticsearch query DSL
+- **Aggregations:** Available for statistical analysis
+- **Scroll API:** Supports large result set pagination
+
+## Recommended Usage Patterns
+
+### For AI Agents
+1. **Text Search:** Use publications-static for full-text research queries
+2. **Entity Resolution:** Leverage organizations/persons for relationship mapping
+3. **Temporal Analysis:** Use events index for activity tracking
+4. **Cross-Reference:** Link publications to projects via shared identifiers
+
+### Query Examples
+```json
+{
+  "index": "research-publications-static",
+  "body": {
+    "query": {
+      "match": {
+        "Title": "machine learning"
+      }
+    },
+    "size": 10
+  }
+}
+```
+
+### Best Practices
+- Use static indices for stable queries
+- Leverage cache indices for enhanced data
+- Implement proper error handling for large results
+- Respect rate limits and connection pooling
+
+## Security & Access
+- **Authentication:** Required for all operations
+- **SSL/TLS:** Mandatory encryption in transit
+- **Credentials:** Stored in environment variables
+- **Permissions:** Read-only access recommended for exploration
+
+## Files Generated
+- **Individual schemas:** `notes/research_*_info.json` (14 files)
+- **Summary data:** `notes/exploration_summary.json`
+- **Analysis document:** `notes/chalmers_database_analysis.md` (this file)
+
+## Next Steps
+1. Develop specialized search tools for each index type
+2. Create relationship mapping between publications and entities
+3. Implement caching strategies for frequently accessed data
+4. Build aggregation queries for statistical analysis
+
+---
+*Generated by OpenSearch exploration script on 2025-06-25*

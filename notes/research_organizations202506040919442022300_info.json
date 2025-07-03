@@ -1,0 +1,1918 @@
+{
+  "index_name": "research-organizations202506040919442022300",
+  "explored_at": "2025-06-25 15:03:10",
+  "document_count": 18081,
+  "size_info": "76.2mb",
+  "field_names": [],
+  "mapping": {
+    "research-organizations202506040919442022300": {
+      "mappings": {
+        "organization": {
+          "properties": {
+            "ActiveOrganizationParentIds": {
+              "type": "keyword"
+            },
+            "City": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "Country": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "CreatedAt": {
+              "type": "date"
+            },
+            "CreatedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DeletedAt": {
+              "type": "date"
+            },
+            "DeletedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DisplayNameEng": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DisplayNameSwe": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DisplayPathEng": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DisplayPathShortEng": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DisplayPathShortSwe": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "DisplayPathSwe": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "EndYear": {
+              "type": "integer"
+            },
+            "GeoLat": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "GeoLong": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "HasIdentifiers": {
+              "type": "boolean"
+            },
+            "Id": {
+              "type": "keyword"
+            },
+            "IdentifierCplDepartmentId": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "IdentifierLdapCode": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "Identifiers": {
+              "type": "nested",
+              "properties": {
+                "CreatedAt": {
+                  "type": "date"
+                },
+                "CreatedBy": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "Id": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "IsActive": {
+                  "type": "boolean"
+                },
+                "Type": {
+                  "properties": {
+                    "DescriptionEng": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DescriptionSwe": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Id": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Value": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "UpdatedAt": {
+                  "type": "date"
+                },
+                "UpdatedBy": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "Value": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "IdentifiersCount": {
+              "type": "integer"
+            },
+            "IsActive": {
+              "type": "boolean"
+            },
+            "IsReplacedById": {
+              "type": "keyword"
+            },
+            "Level": {
+              "type": "integer"
+            },
+            "NameEng": {
+              "type": "text",
+              "analyzer": "organization_name_autosuggest_analyzer",
+              "search_analyzer": "organization_search_analyzer"
+            },
+            "NameSwe": {
+              "type": "text",
+              "analyzer": "organization_name_autosuggest_analyzer",
+              "search_analyzer": "organization_search_analyzer"
+            },
+            "NeedsAttention": {
+              "type": "boolean"
+            },
+            "OrganizationParents": {
+              "properties": {
+                "FromDate": {
+                  "type": "date"
+                },
+                "Id": {
+                  "type": "keyword"
+                },
+                "ParentOrganizationData": {
+                  "properties": {
+                    "ActiveOrganizationParentIds": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "City": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Country": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "CreatedAt": {
+                      "type": "date"
+                    },
+                    "CreatedBy": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DisplayNameEng": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DisplayNameSwe": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "EndYear": {
+                      "type": "long"
+                    },
+                    "GeoLat": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "GeoLong": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "HasIdentifiers": {
+                      "type": "boolean"
+                    },
+                    "Id": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "IdentifierCplDepartmentId": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "IdentifierLdapCode": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Identifiers": {
+                      "properties": {
+                        "CreatedAt": {
+                          "type": "date"
+                        },
+                        "CreatedBy": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "Id": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "IsActive": {
+                          "type": "boolean"
+                        },
+                        "Type": {
+                          "properties": {
+                            "DescriptionEng": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "DescriptionSwe": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "Id": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "Value": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "IdentifiersCount": {
+                      "type": "long"
+                    },
+                    "IsActive": {
+                      "type": "boolean"
+                    },
+                    "Level": {
+                      "type": "long"
+                    },
+                    "NameEng": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "NameSwe": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "NeedsAttention": {
+                      "type": "boolean"
+                    },
+                    "OrganizationParents": {
+                      "properties": {
+                        "FromDate": {
+                          "type": "date"
+                        },
+                        "Id": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "ParentOrganizationData": {
+                          "properties": {
+                            "ActiveOrganizationParentIds": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "City": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "Country": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "CreatedAt": {
+                              "type": "date"
+                            },
+                            "CreatedBy": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "DisplayNameEng": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "DisplayNameSwe": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "EndYear": {
+                              "type": "long"
+                            },
+                            "GeoLat": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "GeoLong": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "HasIdentifiers": {
+                              "type": "boolean"
+                            },
+                            "Id": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "IdentifierCplDepartmentId": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "IdentifierLdapCode": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "Identifiers": {
+                              "properties": {
+                                "CreatedAt": {
+                                  "type": "date"
+                                },
+                                "CreatedBy": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "Id": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "IsActive": {
+                                  "type": "boolean"
+                                },
+                                "Type": {
+                                  "properties": {
+                                    "DescriptionEng": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "DescriptionSwe": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "Id": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "Value": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "IdentifiersCount": {
+                              "type": "long"
+                            },
+                            "IsActive": {
+                              "type": "boolean"
+                            },
+                            "Level": {
+                              "type": "long"
+                            },
+                            "NameEng": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "NameSwe": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "NeedsAttention": {
+                              "type": "boolean"
+                            },
+                            "OrganizationParents": {
+                              "properties": {
+                                "FromDate": {
+                                  "type": "date"
+                                },
+                                "Id": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "ParentOrganizationData": {
+                                  "properties": {
+                                    "City": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "Country": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "CreatedAt": {
+                                      "type": "date"
+                                    },
+                                    "CreatedBy": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "DisplayNameEng": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "DisplayNameSwe": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "EndYear": {
+                                      "type": "long"
+                                    },
+                                    "GeoLat": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "GeoLong": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "HasIdentifiers": {
+                                      "type": "boolean"
+                                    },
+                                    "Id": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "IdentifierLdapCode": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "Identifiers": {
+                                      "properties": {
+                                        "CreatedAt": {
+                                          "type": "date"
+                                        },
+                                        "CreatedBy": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "Id": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "IsActive": {
+                                          "type": "boolean"
+                                        },
+                                        "Type": {
+                                          "properties": {
+                                            "DescriptionEng": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "DescriptionSwe": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "Id": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "Value": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "Value": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "IdentifiersCount": {
+                                      "type": "long"
+                                    },
+                                    "IsActive": {
+                                      "type": "boolean"
+                                    },
+                                    "Level": {
+                                      "type": "long"
+                                    },
+                                    "NameEng": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "NameSwe": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "NeedsAttention": {
+                                      "type": "boolean"
+                                    },
+                                    "OrganizationTypes": {
+                                      "properties": {
+                                        "Id": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "LegacyOrganizationTypeId": {
+                                          "type": "long"
+                                        },
+                                        "NameEng": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "NameSwe": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "PostalNo": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "StartYear": {
+                                      "type": "long"
+                                    },
+                                    "UpdatedAt": {
+                                      "type": "date"
+                                    },
+                                    "UpdatedBy": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "ValidatedBy": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "ValidatedDate": {
+                                      "type": "date"
+                                    }
+                                  }
+                                },
+                                "ParentOrganizationId": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "ToDate": {
+                                  "type": "date"
+                                }
+                              }
+                            },
+                            "OrganizationTypes": {
+                              "properties": {
+                                "Id": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "LegacyOrganizationTypeId": {
+                                  "type": "long"
+                                },
+                                "NameEng": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "NameSwe": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "PostalNo": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "StartYear": {
+                              "type": "long"
+                            },
+                            "UpdatedAt": {
+                              "type": "date"
+                            },
+                            "UpdatedBy": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "ValidatedBy": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "ValidatedDate": {
+                              "type": "date"
+                            }
+                          }
+                        },
+                        "ParentOrganizationId": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "ToDate": {
+                          "type": "date"
+                        }
+                      }
+                    },
+                    "OrganizationTypes": {
+                      "properties": {
+                        "Id": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "LegacyOrganizationTypeId": {
+                          "type": "long"
+                        },
+                        "NameEng": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "NameSwe": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "PostalNo": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "StartYear": {
+                      "type": "long"
+                    },
+                    "UpdatedAt": {
+                      "type": "date"
+                    },
+                    "UpdatedBy": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ValidatedBy": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ValidatedDate": {
+                      "type": "date"
+                    }
+                  }
+                },
+                "ParentOrganizationId": {
+                  "type": "keyword"
+                },
+                "ToDate": {
+                  "type": "date"
+                }
+              }
+            },
+            "OrganizationTypes": {
+              "properties": {
+                "Id": {
+                  "type": "keyword"
+                },
+                "LegacyOrganizationTypeId": {
+                  "type": "integer"
+                },
+                "NameEng": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "NameSwe": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "PossibleDisplayPaths": {
+              "properties": {
+                "DisplayPathEng": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "DisplayPathSwe": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "PostalNo": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "StartYear": {
+              "type": "integer"
+            },
+            "UpdatedAt": {
+              "type": "date"
+            },
+            "UpdatedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ValidatedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ValidatedDate": {
+              "type": "date"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sample_documents": [
+    {
+      "_index": "research-organizations202506040919442022300",
+      "_type": "organization",
+      "_id": "9fb19f54-ead4-4f98-b6c2-3fdb7b462a33",
+      "_score": 1.0,
+      "_source": {
+        "Id": "9fb19f54-ead4-4f98-b6c2-3fdb7b462a33",
+        "NameSwe": "Swansea University Medical School",
+        "NameEng": "Swansea University Medical School",
+        "DisplayNameSwe": "Swansea University Medical School",
+        "DisplayNameEng": "Swansea University Medical School",
+        "DisplayPathSwe": "Swansea University Medical School",
+        "DisplayPathEng": "Swansea University Medical School",
+        "DisplayPathShortSwe": "Swansea University Medical School",
+        "DisplayPathShortEng": "Swansea University Medical School",
+        "PossibleDisplayPaths": [
+          {
+            "DisplayPathSwe": "Swansea University Medical School",
+            "DisplayPathEng": "Swansea University Medical School"
+          }
+        ],
+        "City": "Swansea",
+        "Country": "United Kingdom",
+        "Level": 0,
+        "StartYear": 0,
+        "EndYear": 0,
+        "OrganizationTypes": [
+          {
+            "Id": "65f58e92-6d3a-4608-9304-f2565deb2ade",
+            "NameSwe": "Okänd",
+            "NameEng": "Unknown",
+            "LegacyOrganizationTypeId": 13
+          }
+        ],
+        "OrganizationParents": [],
+        "ActiveOrganizationParentIds": [],
+        "HasIdentifiers": true,
+        "IdentifiersCount": 1,
+        "Identifiers": [
+          {
+            "Id": "0c9f64fc-db4c-40da-96e4-80948f560d07",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "import/scopus",
+            "CreatedAt": "2023-07-16T04:44:04.283",
+            "IsActive": true,
+            "Value": "60170471"
+          }
+        ],
+        "IdentifierLdapCode": [],
+        "IdentifierCplDepartmentId": [],
+        "CreatedBy": "import/scopus",
+        "CreatedAt": "2023-07-16T04:44:04.33",
+        "NeedsAttention": true,
+        "IsActive": true
+      }
+    },
+    {
+      "_index": "research-organizations202506040919442022300",
+      "_type": "organization",
+      "_id": "87cd3d0e-06e0-4e41-b13f-3fdce40c0f6b",
+      "_score": 1.0,
+      "_source": {
+        "Id": "87cd3d0e-06e0-4e41-b13f-3fdce40c0f6b",
+        "NameSwe": "Grenland Eltek",
+        "NameEng": "Eltek",
+        "DisplayNameSwe": "Grenland Eltek",
+        "DisplayNameEng": "Eltek",
+        "DisplayPathSwe": "Grenland Eltek",
+        "DisplayPathEng": "Eltek",
+        "DisplayPathShortSwe": "Grenland Eltek",
+        "DisplayPathShortEng": "Eltek",
+        "PossibleDisplayPaths": [
+          {
+            "DisplayPathSwe": "Grenland Eltek",
+            "DisplayPathEng": "Eltek"
+          }
+        ],
+        "City": "Porsgrunn",
+        "Country": "Norway",
+        "Level": 0,
+        "StartYear": 0,
+        "EndYear": 0,
+        "OrganizationTypes": [
+          {
+            "Id": "7783463b-e852-458d-be30-7aefe0ab7f5c",
+            "NameSwe": "Privat",
+            "NameEng": "Private",
+            "LegacyOrganizationTypeId": 2
+          }
+        ],
+        "OrganizationParents": [],
+        "ActiveOrganizationParentIds": [],
+        "HasIdentifiers": false,
+        "IdentifiersCount": 0,
+        "Identifiers": [],
+        "IdentifierLdapCode": [],
+        "IdentifierCplDepartmentId": [],
+        "CreatedBy": "jarburc",
+        "CreatedAt": "2021-02-19T11:44:55.51",
+        "ValidatedBy": "jarburc",
+        "ValidatedDate": "2021-02-19T11:44:55.51",
+        "NeedsAttention": false,
+        "IsActive": true
+      }
+    },
+    {
+      "_index": "research-organizations202506040919442022300",
+      "_type": "organization",
+      "_id": "62e89399-0177-40f8-93c8-3fd13f854cb4",
+      "_score": 1.0,
+      "_source": {
+        "Id": "62e89399-0177-40f8-93c8-3fd13f854cb4",
+        "NameSwe": "University of Maryland",
+        "NameEng": "University of Maryland",
+        "DisplayNameSwe": "University of Maryland",
+        "DisplayNameEng": "University of Maryland",
+        "DisplayPathSwe": "University of Maryland",
+        "DisplayPathEng": "University of Maryland",
+        "DisplayPathShortSwe": "University of Maryland",
+        "DisplayPathShortEng": "University of Maryland",
+        "PossibleDisplayPaths": [
+          {
+            "DisplayPathSwe": "University of Maryland",
+            "DisplayPathEng": "University of Maryland"
+          }
+        ],
+        "City": "College Park",
+        "PostalNo": "MD 20742",
+        "Country": "United States",
+        "GeoLat": "38.9869183",
+        "GeoLong": "-76.9425543",
+        "Level": 0,
+        "StartYear": 0,
+        "EndYear": 0,
+        "OrganizationTypes": [
+          {
+            "Id": "c8f02133-76b1-4976-8605-b40d801cc082",
+            "NameSwe": "Akademisk",
+            "NameEng": "Academic",
+            "LegacyOrganizationTypeId": 3
+          }
+        ],
+        "OrganizationParents": [],
+        "ActiveOrganizationParentIds": [],
+        "HasIdentifiers": true,
+        "IdentifiersCount": 36,
+        "Identifiers": [
+          {
+            "Id": "9f16858f-d4b2-49bf-97ca-060f34768664",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2018-10-30T10:41:11.513",
+            "IsActive": true,
+            "Value": "60019720"
+          },
+          {
+            "Id": "f4c19a77-2d42-4b1f-9bc5-2622102a12ae",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2019-10-16T14:53:08.433",
+            "IsActive": true,
+            "Value": "univ maryland, dept phys"
+          },
+          {
+            "Id": "2115f236-ab98-46e4-9f78-38bdbb3f8dcc",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2020-04-20T06:53:11.477",
+            "IsActive": true,
+            "Value": "univ maryland"
+          },
+          {
+            "Id": "c3a3ce36-51ea-4eec-aa3f-3af5a7e4f5c6",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2022-06-16T08:59:51.653",
+            "IsActive": true,
+            "Value": "univ maryland, astron dept"
+          },
+          {
+            "Id": "0a899b41-b2ff-43e7-bc00-3d5588ac961f",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2025-05-16T08:31:31.487",
+            "IsActive": true,
+            "Value": "60151558"
+          },
+          {
+            "Id": "d007711b-952d-4083-995e-3ea015c3fb56",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2018-10-30T10:40:19.55",
+            "IsActive": true,
+            "Value": "60024997"
+          },
+          {
+            "Id": "5b178f28-72e1-4ce9-846a-43c8467786e4",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2021-03-05T07:44:21.643",
+            "IsActive": true,
+            "Value": "univ maryland, dept cs"
+          },
+          {
+            "Id": "b74682ce-e355-423e-b3ca-471d50d6d33e",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2024-08-19T14:02:45.067",
+            "IsActive": true,
+            "Value": "univ maryland, dept elect & comp engn"
+          },
+          {
+            "Id": "e88fdfc7-930b-43f1-b29c-47596609b232",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2019-04-01T11:28:57.443",
+            "IsActive": true,
+            "Value": "univ maryland, dept biol"
+          },
+          {
+            "Id": "dde6fa90-e1e6-41d9-a339-5a6f7da23e6c",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2024-05-23T13:55:43.943",
+            "IsActive": true,
+            "Value": "107024467"
+          },
+          {
+            "Id": "b3d93052-f61d-4bfe-b909-649194e9a80e",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2019-04-01T11:29:09.79",
+            "IsActive": true,
+            "Value": "univ maryland, dept mat sci & engn"
+          },
+          {
+            "Id": "fefd1a67-8de3-4bbf-a7cb-6abb66347056",
+            "Type": {
+              "Id": "fda04edc-6fce-11ec-90d6-0242ac120003",
+              "Value": "ROR_ID",
+              "DescriptionSwe": "Organisationskoder (ROR ID) från ror.org.",
+              "DescriptionEng": "Organization (ROR ID) codes from ror.org."
+            },
+            "CreatedBy": "system",
+            "CreatedAt": "2023-05-26T11:30:00",
+            "IsActive": true,
+            "Value": "https://ror.org/03r8q5f36"
+          },
+          {
+            "Id": "cf99db2e-bdcf-495a-8c5f-6cc4f92a3c61",
+            "Type": {
+              "Id": "c75af2f7-ff16-4376-a468-76e7c1c599b3",
+              "Value": "KB_AUTHORITY",
+              "DescriptionSwe": "Organizationsnamn (domän) från Swepubs auktoritetsregister",
+              "DescriptionEng": "Organization (domain) names from Swepub authority files."
+            },
+            "CreatedBy": "aurban",
+            "CreatedAt": "2019-04-01T12:04:35.88",
+            "IsActive": true,
+            "Value": "umd.edu"
+          },
+          {
+            "Id": "795e491e-1e2c-4d51-9ee2-712342f29935",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2018-10-30T10:41:30.843",
+            "IsActive": true,
+            "Value": "60018836"
+          },
+          {
+            "Id": "5ff09ec8-4a04-4d00-af3c-7aa94372a9d9",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2018-10-30T10:40:19.55",
+            "IsActive": true,
+            "Value": "60014653"
+          },
+          {
+            "Id": "70beaf77-09b4-426d-852a-81877240de53",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2018-10-30T10:37:59.263",
+            "IsActive": true,
+            "Value": "univ maryland, sch med, dept pathol"
+          },
+          {
+            "Id": "0e822f31-8e7a-48f9-b4b2-86bf15c5d935",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2022-03-17T12:33:58.323",
+            "IsActive": true,
+            "Value": "univ maryland, maryland ctr fundamental phys, dept phys"
+          },
+          {
+            "Id": "dc659c4a-9f56-4c2c-beb4-8e40ed76685e",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2020-03-30T13:12:28.713",
+            "IsActive": true,
+            "Value": "univ maryland, dept math"
+          },
+          {
+            "Id": "8ad3eebd-9687-40c3-942c-8fa4d0303820",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2019-04-01T11:29:14.413",
+            "IsActive": true,
+            "Value": "60027436"
+          },
+          {
+            "Id": "c1123b20-a19a-49ba-bfe5-923159a10be0",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2020-11-30T15:43:35.367",
+            "IsActive": true,
+            "Value": "124081444"
+          },
+          {
+            "Id": "88736943-101b-40d4-a696-990b0475caa4",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2025-02-26T13:57:38.3",
+            "IsActive": true,
+            "Value": "univ maryland, inst phys sci & technol, dept phys"
+          },
+          {
+            "Id": "82260ce6-32e2-4a71-90ef-9a16a8f5189c",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2020-09-14T14:08:06.683",
+            "IsActive": true,
+            "Value": "univ maryland, maryland ctr fundamental phys"
+          },
+          {
+            "Id": "f8ef290c-cf62-4e3b-bd4a-9da3aed83ca6",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2018-03-06T08:28:31.737",
+            "IsActive": true,
+            "Value": "univ maryland, sch publ hlth"
+          },
+          {
+            "Id": "4eb03315-ac87-44f2-a634-9f49fc8b951b",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2018-06-08T05:38:35.17",
+            "IsActive": true,
+            "Value": "univ maryland, inst syst res"
+          },
+          {
+            "Id": "844976a3-4a61-4892-a577-9f83acfaa9d7",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2021-05-17T06:12:51.08",
+            "IsActive": true,
+            "Value": "univ maryland, dept geog sci"
+          },
+          {
+            "Id": "c447f612-ff36-4a88-ab0b-c28814c77edc",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2024-08-19T14:02:57.9",
+            "IsActive": true,
+            "Value": "univ maryland, ctr nanophys & adv mat"
+          },
+          {
+            "Id": "15ff9ecf-3bed-4141-8554-c74f7d0e93ed",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2019-10-16T14:53:32.497",
+            "IsActive": true,
+            "Value": "univ maryland, inst res elect & appl phys"
+          },
+          {
+            "Id": "cec5c2fc-721c-4e96-aab3-c97452fd2c33",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2019-04-01T11:29:07.243",
+            "IsActive": true,
+            "Value": "univ maryland, joint space sci inst"
+          },
+          {
+            "Id": "3d067d1f-c794-465f-a642-dcd02ee52bb8",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2021-08-19T08:55:39.73",
+            "IsActive": true,
+            "Value": "univ maryland, dept chem"
+          },
+          {
+            "Id": "821ff6ae-4c0a-4887-883d-e76afd6e3936",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "import/scopus",
+            "CreatedAt": "2017-10-06T23:14:33.04",
+            "IsActive": true,
+            "Value": "60020304"
+          },
+          {
+            "Id": "e2244f93-27fa-49dd-9af1-e7b096e0ef23",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2020-09-17T10:54:49.263",
+            "IsActive": true,
+            "Value": "univ maryland, dept comp sci"
+          },
+          {
+            "Id": "28517f38-e9ff-4077-8b59-ead7c4a41a3a",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2024-05-23T13:53:36.583",
+            "IsActive": true,
+            "Value": "126837916"
+          },
+          {
+            "Id": "d259a770-636e-404d-9f67-ed9e5bbb49d0",
+            "Type": {
+              "Id": "b4bad394-22ff-4d11-9b7e-834eae39d6f7",
+              "Value": "SCOPUS_AFID",
+              "DescriptionSwe": "Scopus Affiliation ID",
+              "DescriptionEng": "Scopus Affiliation ID"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2018-10-30T10:40:48.707",
+            "IsActive": true,
+            "Value": "60012957"
+          },
+          {
+            "Id": "25405d3f-e5b5-4f39-816a-ee9f40fe4770",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2024-11-27T11:31:34.377",
+            "IsActive": true,
+            "Value": "univ maryland, inst phys sci & technol"
+          },
+          {
+            "Id": "e4bd6a31-7e2b-4eab-92a2-f02ed9403eb1",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2019-04-01T11:29:11.93",
+            "IsActive": true,
+            "Value": "univ maryland, dept astron"
+          },
+          {
+            "Id": "bba097aa-c577-4989-8362-f33056412822",
+            "Type": {
+              "Id": "a2754f94-7e3b-4028-aec2-a2f8b7ee6549",
+              "Value": "WOS_NAME_KEY",
+              "DescriptionSwe": "Förkortade organizationsnamn från Web of Science",
+              "DescriptionEng": "Abbreviated organization names from Web of Science"
+            },
+            "CreatedBy": "organization/merge",
+            "CreatedAt": "2019-10-16T14:52:50.897",
+            "IsActive": true,
+            "Value": "univ maryland baltimore cty, dept phys"
+          }
+        ],
+        "IdentifierLdapCode": [],
+        "IdentifierCplDepartmentId": [],
+        "CreatedBy": "import/scopus",
+        "CreatedAt": "2017-10-06T23:14:33.053",
+        "UpdatedBy": "organization/merge",
+        "UpdatedAt": "2025-05-16T08:36:14.207",
+        "ValidatedBy": "jeslindh",
+        "ValidatedDate": "2020-11-30T15:43:56.337",
+        "NeedsAttention": false,
+        "IsActive": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "index_name": "research-serials202506041150496604328",
+  "explored_at": "2025-06-25 15:03:10",
+  "document_count": 40588,
+  "size_info": "70.2mb",
+  "field_names": [],
+  "mapping": {
+    "research-serials202506041150496604328": {
+      "mappings": {
+        "serial": {
+          "properties": {
+            "Country": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "CreatedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "CreatedDate": {
+              "type": "date"
+            },
+            "EndYear": {
+              "type": "integer"
+            },
+            "Id": {
+              "type": "keyword"
+            },
+            "Identifiers": {
+              "properties": {
+                "CreatedAt": {
+                  "type": "date"
+                },
+                "CreatedBy": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "Id": {
+                  "type": "keyword"
+                },
+                "IsActive": {
+                  "type": "boolean"
+                },
+                "Type": {
+                  "properties": {
+                    "DescriptionEng": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "DescriptionSwe": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "Value": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "UpdatedAt": {
+                  "type": "date"
+                },
+                "UpdatedBy": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "Value": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    },
+                    "sansdash": {
+                      "type": "text",
+                      "analyzer": "standard_dash_removing_analyzer"
+                    }
+                  }
+                }
+              }
+            },
+            "IsDeleted": {
+              "type": "boolean"
+            },
+            "IsOpenAccess": {
+              "type": "boolean"
+            },
+            "IsPeerReviewed": {
+              "type": "boolean"
+            },
+            "Publisher": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "StartYear": {
+              "type": "integer"
+            },
+            "Title": {
+              "type": "text",
+              "analyzer": "serial_name_autosuggest_analyzer",
+              "search_analyzer": "person_serial_analyzer"
+            },
+            "Type": {
+              "properties": {
+                "DescriptionEng": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "DescriptionSwe": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "Id": {
+                  "type": "keyword"
+                },
+                "Value": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "UpdatedBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "UpdatedDate": {
+              "type": "date"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sample_documents": [
+    {
+      "_index": "research-serials202506041150496604328",
+      "_type": "serial",
+      "_id": "948c6f25-831c-4dca-bf35-85a609359453",
+      "_score": 1.0,
+      "_source": {
+        "Id": "948c6f25-831c-4dca-bf35-85a609359453",
+        "Title": "Discursos Fotograficos",
+        "Type": {
+          "Id": "4aad0924-7da3-4d99-9f05-ea86f121f932",
+          "Value": "JOURNAL",
+          "DescriptionSwe": "Tidskrift",
+          "DescriptionEng": "Journal"
+        },
+        "StartYear": 2012,
+        "Publisher": "State University of Londrina ECSC - Department of Communication",
+        "Country": "Brazil",
+        "Identifiers": [
+          {
+            "Id": "4affad90-7a3c-48a4-9b19-6e51cc1ddb8b",
+            "Type": {
+              "Value": "ISSN"
+            },
+            "IsActive": true,
+            "Value": "1808-5652"
+          },
+          {
+            "Id": "62abc9a2-a9e0-4c7c-ad9f-89c33a100b9d",
+            "Type": {
+              "Value": "EISSN",
+              "DescriptionSwe": "Electronic International Standard Serial Number",
+              "DescriptionEng": "Electronic International Standard Serial Number"
+            },
+            "IsActive": true,
+            "Value": "1984-7939"
+          },
+          {
+            "Id": "df1ac888-0ec5-47e5-b27a-e22b0125b393",
+            "Type": {
+              "Value": "SCOPUS_SOURCE_ID",
+              "DescriptionSwe": "Identifierare av källa (tidskrift etc) i Scopus",
+              "DescriptionEng": "Elsevier Scopus Source Identifier"
+            },
+            "IsActive": true,
+            "Value": "21100207638"
+          }
+        ],
+        "IsOpenAccess": true,
+        "IsPeerReviewed": true,
+        "IsDeleted": false,
+        "CreatedDate": "2017-10-06T08:40:43.793"
+      }
+    },
+    {
+      "_index": "research-serials202506041150496604328",
+      "_type": "serial",
+      "_id": "de63325b-8dac-4c2d-8be1-85a7e0a214c0",
+      "_score": 1.0,
+      "_source": {
+        "Id": "de63325b-8dac-4c2d-8be1-85a7e0a214c0",
+        "Title": "Leonardo Journal of Practices and Technologies",
+        "Type": {
+          "Id": "4aad0924-7da3-4d99-9f05-ea86f121f932",
+          "Value": "JOURNAL",
+          "DescriptionSwe": "Tidskrift",
+          "DescriptionEng": "Journal"
+        },
+        "StartYear": 2008,
+        "EndYear": 2016,
+        "Publisher": "AcademicDirect",
+        "Country": "Romania",
+        "Identifiers": [
+          {
+            "Id": "51831bb0-3771-4a77-8657-a2c4e03502ff",
+            "Type": {
+              "Value": "SCOPUS_SOURCE_ID",
+              "DescriptionSwe": "Identifierare av källa (tidskrift etc) i Scopus",
+              "DescriptionEng": "Elsevier Scopus Source Identifier"
+            },
+            "IsActive": true,
+            "Value": "13800154702"
+          },
+          {
+            "Id": "98b16f84-f362-4321-944f-b5a77154fbb3",
+            "Type": {
+              "Value": "ISSN"
+            },
+            "IsActive": true,
+            "Value": "1583-1078"
+          }
+        ],
+        "IsOpenAccess": true,
+        "IsPeerReviewed": true,
+        "IsDeleted": false,
+        "CreatedDate": "2017-10-06T09:39:56.857"
+      }
+    },
+    {
+      "_index": "research-serials202506041150496604328",
+      "_type": "serial",
+      "_id": "8419eea9-0fe9-42e5-8229-85adc518c6dd",
+      "_score": 1.0,
+      "_source": {
+        "Id": "8419eea9-0fe9-42e5-8229-85adc518c6dd",
+        "Title": "Pensee Plurielle",
+        "Type": {
+          "Id": "4aad0924-7da3-4d99-9f05-ea86f121f932",
+          "Value": "JOURNAL",
+          "DescriptionSwe": "Tidskrift",
+          "DescriptionEng": "Journal"
+        },
+        "StartYear": 2001,
+        "Publisher": "De Boeck Supérieur",
+        "Country": "Belgium",
+        "Identifiers": [
+          {
+            "Id": "b8c5a8d6-f35b-4745-9714-860ed81d2a1f",
+            "Type": {
+              "Value": "SCOPUS_SOURCE_ID",
+              "DescriptionSwe": "Identifierare av källa (tidskrift etc) i Scopus",
+              "DescriptionEng": "Elsevier Scopus Source Identifier"
+            },
+            "IsActive": true,
+            "Value": "17700155036"
+          },
+          {
+            "Id": "0949a84d-471d-45a0-9107-8e086e45ba22",
+            "Type": {
+              "Value": "EISSN",
+              "DescriptionSwe": "Electronic International Standard Serial Number",
+              "DescriptionEng": "Electronic International Standard Serial Number"
+            },
+            "IsActive": true,
+            "Value": "1782-1479"
+          },
+          {
+            "Id": "71913979-6783-4472-ad6b-ac22766a4790",
+            "Type": {
+              "Value": "ISSN"
+            },
+            "IsActive": true,
+            "Value": "1376-0963"
+          }
+        ],
+        "IsOpenAccess": false,
+        "IsPeerReviewed": true,
+        "IsDeleted": false,
+        "CreatedDate": "2017-10-06T11:38:40.37",
+        "UpdatedBy": "autobot",
+        "UpdatedDate": "2024-01-29T19:46:55.657"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.claude
+data/
+demo/
+.env
+venv
+archive_old_files/
+01_*
+check_*
+clean_*
+clear_*
